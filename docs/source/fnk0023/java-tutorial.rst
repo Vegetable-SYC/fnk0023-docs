@@ -7,13 +7,13 @@ java tutorial
    :titlesonly:
    :caption: Preface
 
-   codes/preface/java_preface.rst
+   ../codes/preface/java_preface.rst
 
 .. toctree::
    :titlesonly: 
    :caption: Preparation
    
-   codes/preface/java_preparation.rst
+   ../codes/preface/java_preparation.rst
 
 .. toctree::
    :numbered:
@@ -29,18 +29,5 @@ java tutorial
    codes/java-lang/ADC.rst
    codes/java-lang/Photoresistor&LED.rst
    codes/java-lang/Thermistor.rst
-   codes/java-lang/Joystick.rst
-   codes/java-lang/Motor&Driver.rst
-   codes/java-lang/Relay&LED.rst
-   codes/java-lang/Servo.rst
-   codes/java-lang/Stepper_Motor.rst
-   codes/java-lang/74HC595&Bar_Graph_LED.rst
-   codes/java-lang/74HC595&4_Digit_7-Segment_Display.rst
-   codes/java-lang/74HC595&LED_Matrix.rst
    codes/java-lang/LCD1602.rst
-   codes/java-lang/Hygrothermograph_DHT11.rst
-   codes/java-lang/Matrix_Keypad.rst
-   codes/java-lang/Infrared_Motion_Sensor.rst
-   codes/java-lang/Ultrasonic_Ranging.rst
-   codes/java-lang/Attitude_Sensor_MPU6050.rst
-   codes/java-lang/WhatsNext.rst
+   codes/common/WhatsNext.rst
