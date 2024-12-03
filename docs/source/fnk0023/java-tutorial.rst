@@ -7,13 +7,13 @@ java tutorial
    :titlesonly:
    :caption: Preface
 
-   ../codes/preface/java_preface.rst
+   codes/preface/java_preface.rst
 
 .. toctree::
    :titlesonly: 
    :caption: Preparation
    
-   ../codes/preface/java_preparation.rst
+   codes/preface/java_preparation.rst
 
 .. toctree::
    :numbered:
@@ -30,4 +30,4 @@ java tutorial
    codes/java-lang/Photoresistor&LED.rst
    codes/java-lang/Thermistor.rst
    codes/java-lang/LCD1602.rst
-   codes/common/WhatsNext.rst
+   codes/java-lang/WhatsNext.rst
