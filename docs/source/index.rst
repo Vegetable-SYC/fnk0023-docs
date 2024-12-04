@@ -1,6 +1,6 @@
 
 ######################################################
-freenove documentation for raspberry pi starter kit
+Freenove LCD1602 Starter Kit for Raspberry Pi
 ######################################################
 
 .. toctree::

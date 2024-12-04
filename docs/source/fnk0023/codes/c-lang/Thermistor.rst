@@ -40,8 +40,11 @@ Component List
 +---------------------------------------------------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
+    :width: 80%
 .. |Resistor-10kΩ| image:: ../_static/imgs/Resistor-10kΩ.png
+    :width: 10%
 .. |Thermistor| image:: ../_static/imgs/Thermistor.png
+    :width: 30%
 .. |ADC-module-1| image:: ../_static/imgs/ADC-module-1.png
 .. |ADC-module-2| image:: ../_static/imgs/ADC-module-2.png
 
