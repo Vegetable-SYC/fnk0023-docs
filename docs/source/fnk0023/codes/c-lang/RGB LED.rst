@@ -4,6 +4,7 @@ Chapter RGB LED
 
 
 In this chapter, we will learn how to control a RGB LED.
+
 An RGB LED has 3 LEDs integrated into one LED component. It can respectively emit Red, Green and Blue light. In order to do this, it requires 4 pins (this is also how you identify it). The long pin (1) is the common which is the Anode (+) or positive lead, the other 3 are the Cathodes (-) or negative leads. A rendering of a RGB LED and its electronic symbol are shown below. We can make RGB LED emit various colors of light and brightness by controlling the 3 Cathodes (2, 3 & 4) of the RGB LED
 
 .. list-table::
@@ -29,6 +30,7 @@ Red, Green, and Blue light are called 3 Primary Colors when discussing light (No
     RGB
 
 If we use a three 8 bit PWM to control the RGB LED, in theory, we can create 28*28*28=16777216 (16 million) colors through different combinations of RGB light brightness.
+
 Next, we will use RGB LED to make a multicolored LED. 
 
 Project Multicolored LED
@@ -120,27 +122,27 @@ After the program is executed, you will see that the RGB LED shows lights of dif
 
 The following is the program code:
 
-.. literalinclude:: ../../../../fnk0066-codes/c-lang/RGBLED/RGBLED.c
+.. literalinclude:: ../../../freenove_Kit/Code/C_Code/05.1.1_ColorfulLED/ColorfulLED.c
     :linenos: 
     :language: C
 
 First, in subfunction of ledInit(), create the software PWM control pins used to control the R, G, B pin respectively.
 
-.. literalinclude:: ../../../../fnk0066-codes/c-lang/RGBLED/RGBLED.c
+.. literalinclude:: ../../../freenove_Kit/Code/C_Code/05.1.1_ColorfulLED/ColorfulLED.c
     :linenos: 
     :language: C
     :lines: 10-15
 
 Then create subfunction, and set the PWM of three pins.
 
-.. literalinclude:: ../../../../fnk0066-codes/c-lang/RGBLED/RGBLED.c
+.. literalinclude:: ../../../freenove_Kit/Code/C_Code/05.1.1_ColorfulLED/ColorfulLED.c
     :linenos: 
     :language: C
     :lines: 17-22
 
 Finally, in the “while” loop of main function, get three random numbers and specify them as the PWM duty cycle, which will be assigned to the corresponding pins. So RGB LED can switch the color randomly all the time.
 
-.. literalinclude:: ../../../../fnk0066-codes/c-lang/RGBLED/RGBLED.c
+.. literalinclude:: ../../../freenove_Kit/Code/C_Code/05.1.1_ColorfulLED/ColorfulLED.c
     :linenos: 
     :language: C
     :lines: 33-42

@@ -346,6 +346,7 @@ For C code for the ADC Device, a custom library needs to be installed.
         :align: center
 
 Next, we will execute the code for this project.
+
 First, observe the project result, and then learn about the code in detail.
 
 .. hint:: 

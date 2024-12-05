@@ -76,12 +76,14 @@ The relationship between resistance value and temperature of a thermistor is:
     - T1, T2 is Kelvin temperature (absolute temperature). Kelvin temperature=273.15 + Celsius temperature.
 
 For the parameters of the Thermistor, we use: B=3950, R=10k, T1=25.
+
 The circuit connection method of the Thermistor is similar to photoresistor, as the following:
 
 .. image:: ../_static/imgs/Thermistor-3.png
         :width: 20%
 
 We can use the value measured by the ADC converter to obtain the resistance value of Thermistor, and then we can use the formula to obtain the temperature value.
+
 Therefore, the temperature formula can be derived as:
 
 .. container:: centered
@@ -148,6 +150,7 @@ C Code 11.1.1 Thermometer
 ----------------------------------------------------------------
 
 If you did not configure I2C, please refer to :doc:`Chapter 7 ADC <ADC>`. If you did, please continue.
+
 First, observe the project result, and then learn about the code in detail.
 
 .. hint:: 

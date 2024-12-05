@@ -39,10 +39,38 @@ Component List
     .. image:: ../_static/imgs/res-220R.png
         :height: 100
 
-6.  Jumper (some)
++-----------------------------------------------------------+
+|    Raspberry Pi                                           |     
+|                                                           |       
+|    (Recommended: Raspberry Pi 5 / 4B / 3B+ / 3B)          |       
+|                                                           |                                                            
+|    (Compatible: 3A+ / 2B / 1B+ / 1A+ / Zero W / Zero)     |                                                                 
+|                                                           | 
+|     |raspberrypi5|                                        | 
++---------------------------+-------------------------------+
+| LED x1                    | Breadboard x1                 |
+|                           |                               |
+|  |red-led|                |  |breadborad-830|             |                         
++---------------------------+----------+--------------------+
+|  GPIO Extension Board & Ribbon Cable | Resistor 220Ω x1   |
+|                                      |                    | 
+|   |extension-board|                  |  |res-220R|        |
++--------------------------------------+--------------------+
 
-    .. image:: ../_static/imgs/jumper-wire.png
-        :height: 20
+.. |raspberrypi5| image:: ../_static/imgs/raspberrypi5.png
+    :width: 60%
+.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
+    :width: 60%
+.. |extension-board| image:: ../_static/imgs/raspberrypi-extension-board.jpg
+    :width: 18%
+.. |breadborad-830| image:: ../_static/imgs/breadborad-830.jpg
+    :width: 10%
+.. |red-led| image:: ../_static/imgs/red-led.png
+    :width: 30%
+.. |res-220R| image:: ../_static/imgs/res-220R.png
+    :width: 30%
+.. |NPN-transistor| image:: ../_static/imgs/NPN-transistor.png
+    :width: 25%
 
 In the components list, 3B GPIO, Extension Shield Raspberry and Breadboard are necessary for each project. Later, they will be reference by text only (no images as in above).
 

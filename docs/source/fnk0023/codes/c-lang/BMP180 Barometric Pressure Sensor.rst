@@ -2,7 +2,6 @@
 Chapter BMP180 Barometric Pressure Sensor
 ##############################################################################
 
-
 In this chapter, we will learn how to use BMP180 barometric pressure sensor.
 
 Project 33.1 Barometer
@@ -84,7 +83,6 @@ Below is the pinout of BMP180 barometric pressure sensor.
      - Serial data pin of I2C interface
 
 Please do not use voltage beyond the power supply range to avoid damage to the BMP180 barometric pressure sensor.
-
 
 +------------------------------------------------------------------------------------------------+
 |   Schematic diagram                                                                            |

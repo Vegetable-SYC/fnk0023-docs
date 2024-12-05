@@ -102,14 +102,15 @@ First, observe the project result, and then learn about the code in detail.
        $ sudo ./LightWater
 
 After the program is executed, you will see that Bar Graph LED starts with the flowing water pattern flashing from left to right and then back from right to left.
+
 The following is the program code:
 
-.. literalinclude:: ../../../../fnk0066-codes/c-lang/LightWater/LightWater_1.c
+.. literalinclude:: ../../../freenove_Kit/Code/C_Code/03.1.1_LightWater/LightWater.c
     :linenos: 
     :language: C
 
 In the program, configure the GPIO0-GPIO9 to output mode. Then, in the endless “while” loop of main function, use two “for” loop to realize flowing water light from left to right and from right to left.
 
-.. literalinclude:: ../../../../fnk0066-codes/c-lang/LightWater/LightWater_2.c
+.. literalinclude:: ../../../freenove_Kit/Code/C_Code/03.1.1_LightWater/LightWater.c
     :linenos: 
     :language: C

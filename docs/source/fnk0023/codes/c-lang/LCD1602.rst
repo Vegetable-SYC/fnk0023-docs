@@ -2,8 +2,6 @@
 Chapter LCD1602
 ##############################################################################
 
-
-
 In this chapter, we will learn about the LCD1602 Display Screen
 
 Project I2C LCD1602
@@ -32,6 +30,7 @@ PCF8574 module pins and LCD1602 pins correspond to each other and connected to e
     :align: center
 
 Because of this, as stated earlier, we only need 4 pins to control the16 pins of the LCD1602 Display Screen through the I2C interface.
+
 In this project, we will use the I2C LCD1602 to display some static characters and dynamic variables.
 
 Component List
@@ -73,6 +72,7 @@ Note that the power supply for I2C LCD1602 in this circuit is 5V.
 .. |LCD1602_Fr| image:: ../_static/imgs/LCD1602_Fr.png
 
 .. note::
+    
     It is necessary to configure 12C and install Smbus first (see :doc:`Chapter 7 ADC <ADC>` for details)
 
 Code

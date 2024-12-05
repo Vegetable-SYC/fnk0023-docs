@@ -146,7 +146,7 @@ Release the button, then LED is turned off and then terminal window prints out t
 
 The following is the program code:
 
-.. literalinclude:: ../../../../fnk0066-codes/c-lang/ButtonLED/ButtonLED.c
+.. literalinclude:: ../../../freenove_Kit/Code/C_Code/02.1.1_ButtonLED/ButtonLED.c
     :linenos: 
     :language: C
 
@@ -159,7 +159,7 @@ In the circuit connection, LED and Button are connected with GPIO17 and GPIO18 r
 
 In the while loop of main function, use digitalRead(buttonPin) to determine the state of Button. When the button is pressed, the function returns low level, the result of “if” is true, and then turn on LED. Or, turn off LED
 
-.. literalinclude:: ../../../../fnk0066-codes/c-lang/ButtonLED/ButtonLED.c
+.. literalinclude:: ../../../freenove_Kit/Code/C_Code/02.1.1_ButtonLED/ButtonLED.c
     :linenos: 
     :language: C
     :lines: 24-31

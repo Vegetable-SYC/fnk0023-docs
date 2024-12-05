@@ -10,12 +10,6 @@ Project Doorbell
 
 We will make a doorbell with this functionality: when the Push Button Switch is pressed the buzzer sounds and when the button is released, the buzzer stops. This is a momentary switch function.
 
-.. table:: 
-    :width: 50%
-    :height: 50%
-    :widths: 50 50
-    :align: center
-
 +-----------------------------------------------------------+
 |    Raspberry Pi (with 40 GPIO) x1                         |     
 |                                                           |       
@@ -196,9 +190,10 @@ First, observe the project result, and then learn about the code in detail.
     $ sudo ./Doorbell
 
 After the program is executed, press the push button switch and the will buzzer sound. Release the push button switch and the buzzer will stop.
+
 The following is the program code:
 
-.. literalinclude:: ../../../../fnk0066-codes/c-lang/Buzzer/Doorbell.c
+.. literalinclude:: ../../../freenove_Kit/Code/C_Code/06.1.1_Doorbell/Doorbell.c
     :linenos: 
     :language: C
 
@@ -209,13 +204,16 @@ Project Alertor
 ****************************************************************
 
 Next, we will use a passive buzzer to make an alarm. 
+
 The list of components and the circuit is similar to the doorbell project. We only need to take the Doorbell circuit and replace the active buzzer with a passive buzzer.
 
 Code
 ================================================================
 
 In this project, our buzzer alarm is controlled by the push button switch. Press the push button switch and the buzzer will sound. Release the push button switch and the buzzer will stop.
+
 As stated before, it is analogous to our earlier project that controlled an LED ON and OFF.
+
 To control a passive buzzer requires PWM of certain sound frequency.
 
 Alertor
@@ -244,9 +242,10 @@ First, observe the project result, and then learn about the code in detail.
     $ sudo ./Alertor
 
 After the program is executed, press the push button switch and the buzzer will sound. Release the push button switch and the buzzer will stop.
+
 The following is the program code:
 
-.. literalinclude:: ../../../../fnk0066-codes/c-lang/Buzzer/Alertor.c
+.. literalinclude:: ../../../freenove_Kit/Code/C_Code/06.2.1_Alertor/Alertor.c
     :linenos: 
     :language: C
 
@@ -258,7 +257,7 @@ The code is the same to the active buzzer but the method is different. A passive
 
 In the while loop of the main function, when the push button switch is pressed the subfunction alertor() will be called and the alarm will issue a warning sound. The frequency curve of the alarm is based on a sine curve. We need to calculate the sine value from 0 to 360 degrees and multiplied by a certain value (here this value is 500) plus the resonant frequency of buzzer. We can set the PWM frequency through softToneWrite (pin, toneVal).
 
-.. literalinclude:: ../../../../fnk0066-codes/c-lang/Buzzer/Alertor.c
+.. literalinclude:: ../../../freenove_Kit/Code/C_Code/06.2.1_Alertor/Alertor.c
     :linenos: 
     :language: C
     :lines: 9-18

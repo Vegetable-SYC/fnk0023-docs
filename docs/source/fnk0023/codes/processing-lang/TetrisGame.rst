@@ -19,14 +19,14 @@ Component List
 |                                                 |  |jumper-wire|                                  |                                                            
 |3. Breadboard x1                                 |                                                 |                                                                 
 +-------------------------------------------------+-------------------------------------------------+
-| Push button x12                                  | Resistor 10kΩ x1                               |
+| Push button x12                                 | Resistor 10kΩ x1                                |
 |                                                 |                                                 |
 |  |button-small|                                 |  |Resistor-10kΩ|                                |
 +-------------------------------------------------+-------------------------------------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
 .. |Resistor-10kΩ| image:: ../_static/imgs/Resistor-10kΩ.png
-.. |button-small| image:: ../_static/imgs/button-small.jpgg
+.. |button-small| image:: ../_static/imgs/button-small.jpg
     :width: 50%
 
 Circuit

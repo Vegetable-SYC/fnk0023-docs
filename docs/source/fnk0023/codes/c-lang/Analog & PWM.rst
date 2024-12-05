@@ -11,29 +11,27 @@ Project Breathing LED
 ****************************************************************
 
 We describe this project as a Breathing Light. This means that an LED that is OFF will then turn ON gradually and then gradually turn OFF like "breathing". Okay, so how do we control the brightness of an LED to create a Breathing Light? We will use PWM to achieve this goal.
-
+    
 Component List
 ================================================================
 
-1. Raspberry Pi (with 40 GPIO) x1
-GPIO Extension Board & Ribbon Cable x1
-Breadboard x1
++-------------------------------------------------+-------------------------------------------------+
+|1. Raspberry Pi (with 40 GPIO) x1                |                                                 |     
+|                                                 |   Jumper Wires x1                               |       
+|2. GPIO Extension Board & Ribbon Cable x1        |                                                 |       
+|                                                 |     |jumper-wire|                               |                                                            
+|3. Breadboard x1                                 |                                                 |                                                                 
++-------------------------------------------------+-------------------------------------------------+
+|  LED x1                                         |   Resistor 220Ω x 1                             |
+|                                                 |                                                 |
+|   |LED|                                         |    |res-220R-hori|                              |
++-------------------------------------------------+-------------------------------------------------+
 
-2. Jumper Wire x 1
-
-.. image:: ../_static/imgs/jumper-wire.png
-        :width: 25%
-
-3. LED x1
-
-.. image:: ../_static/imgs/red-led.png
-        :width: 5%
-
-4. Resistor 220Ω x 1
-
-.. image:: ../_static/imgs/res-220R-hori.png
-        :width: 15%
-
+.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
+.. |res-220R-hori| image:: ../_static/imgs/res-220R-hori.png
+    :width: 60%
+.. |LED| image:: ../_static/imgs/red-led.png
+    :width: 20%
 
 Component Knowledge
 ================================================================
@@ -126,9 +124,10 @@ First, observe the project result, and then learn about the code in detail.
     $ sudo ./BreathingLED
 
 After the program is executed, you'll see that LED is turned from on to off and then from off to on gradually like breathing.
+
 The following is the program code:
 
-.. literalinclude:: ../../../../fnk0066-codes/c-lang/BreathingLED/BreathingLED.c
+.. literalinclude:: ../../../freenove_Kit/Code/C_Code/04.1.1_BreathingLED/BreathingLED.c
     :linenos: 
     :language: C
 
@@ -140,7 +139,7 @@ First, create a software PWM pin.
 
 There are two “for” loops in the next endless “while” loop. The first loop outputs a power signal to the ledPin PWM from 0% to 100% and the second loop outputs a power signal to the ledPin PWM from 100% to 0%. 
 
-.. literalinclude:: ../../../../fnk0066-codes/c-lang/BreathingLED/BreathingLED.c
+.. literalinclude:: ../../../freenove_Kit/Code/C_Code/04.1.1_BreathingLED/BreathingLED.c
     :linenos: 
     :language: C
     :lines: 15-26

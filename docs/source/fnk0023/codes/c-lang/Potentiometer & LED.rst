@@ -37,7 +37,7 @@ Component List
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
     :width: 70%
 .. |Resistor-10kΩ| image:: ../_static/imgs/Resistor-10kΩ.png
-    :width: 10%
+    :width: 20%
 .. |Rotary-potentiometer| image:: ../_static/imgs/Rotary-potentiometer.png
     :width: 25%
 .. |ADC-module-1| image:: ../_static/imgs/ADC-module-1.png
@@ -92,6 +92,7 @@ C Code 8.1.1 Softlight
 ----------------------------------------------------------------
 
 If you did not configure I2C, please refer to :doc:`Chapter 7 ADC <ADC>` . If you did, please move on.
+
 First, observe the project result, and then learn about the code in detail.
 
 .. hint:: 
