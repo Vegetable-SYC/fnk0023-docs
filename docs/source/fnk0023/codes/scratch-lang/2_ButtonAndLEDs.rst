@@ -134,7 +134,7 @@ Load the code to scratch3.
 
 Click the green flag. Then when you press button switch, the ballon will rise. Otherwise, the ballon will fall. When the ballon is too high or too low, game is over. The falling speed will increase over time.
 
-.. image:: ../_static/imgs/scratch_button1.png
+.. image:: ../_static/imgs/scratch_float_ballon.png
     :align: center
 
 If we select varianle of left, they will be shown on right.

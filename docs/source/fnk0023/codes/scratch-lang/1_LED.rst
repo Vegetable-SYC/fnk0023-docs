@@ -257,7 +257,7 @@ Load the code to scratch3.
 
 .. code-block:: console
 
-    $ cd ~/Freenove_Kit/Code/Scratch3/01.0_Keyboard_LED.sb3
+    Freenove_Kit/Code/Scratch3/01.0_Keyboard_LED.sb3
 
 Click the green flag. Then when you press space key on your keyboard, the LED will be turned on. Otherwise, the LED will be turned off.
 
@@ -276,7 +276,7 @@ Load the code to scratch3.
 
 .. code-block:: console
 
-    $ cd ~/Freenove_Kit/Code/Scratch3/01.2_Sprite_LED.sb3
+    Freenove_Kit/Code/Scratch3/01.2_Sprite_LED.sb3
 
 Click the green flag. Then click the ball. The LED will be turned on or turned off.
 

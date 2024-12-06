@@ -52,6 +52,8 @@ Component List
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
 .. |Resistor-10kΩ| image:: ../_static/imgs/Resistor-10kΩ.png
+.. |res-220R-hori| image:: ../_static/imgs/res-220R-hori.png
+
 
 Circuit
 ================================================================
@@ -111,3 +113,6 @@ Load the code to scratch3.
 Click the green flag. Then click “r”, “g” and “b” randomly and observe the color change.
 
 **“r”, “g” and “b” on key board will be used and detect.**
+
+.. image:: ../_static/imgs/scratch_KEY_RGB.png
+    :align: center

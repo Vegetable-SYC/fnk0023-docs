@@ -43,8 +43,8 @@ Circuit
 |   |scratch_t_button_Fr|                                                                        |
 +------------------------------------------------------------------------------------------------+
 
-.. |ADS7830-Schematic-3| image:: ../_static/imgs/scratch_t_button_Sc.png
-.. |ADS7830-fritizing-3| image:: ../_static/imgs/scratch_t_button_Fr.png
+.. |scratch_t_button_Sc| image:: ../_static/imgs/scratch_t_button_Sc.png
+.. |scratch_t_button_Fr| image:: ../_static/imgs/scratch_t_button_Fr.png
 
 Code
 ================================================================
