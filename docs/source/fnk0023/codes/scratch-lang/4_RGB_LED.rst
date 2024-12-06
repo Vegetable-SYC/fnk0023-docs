@@ -83,7 +83,7 @@ Circuit
 Code
 ================================================================
 
-04.0_RGBLED
+RGBLED
 ----------------------------------------------------------------
 
 Load the code to scratch3.
@@ -99,7 +99,7 @@ The code is for common anode RGB LED. One low and two high.
 .. image:: ../_static/imgs/scratch_RGB.png
     :align: center
 
-04.1_Keyboard_RGBLED
+Keyboard_RGBLED
 ----------------------------------------------------------------
 
 Load the code to scratch3.

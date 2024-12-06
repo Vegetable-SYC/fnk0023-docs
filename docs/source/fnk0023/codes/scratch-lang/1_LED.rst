@@ -160,6 +160,7 @@ A resistor is a passive electrical component that limits or regulates the flow o
 On the left, we see a physical representation of a resistor, and the right is the symbol used to represent the presence of a resistor in a circuit diagram or schematic.
 
 .. image:: ../_static/imgs/res-describe.png
+    :align: center
 
 The bands of color on a resistor is a shorthand code used to identify its resistance value. For more details of resistor color codes, please refer to the card in the kit package.
 With a fixed voltage, there will be less current output with greater resistance added to the circuit. The relationship between Current, Voltage and Resistance can be expressed by this formula: I=V/R known as Ohm’s Law where I = Current, V = Voltage and R = Resistance. Knowing the values of any two of these allows you to solve the value of the third.
@@ -202,7 +203,7 @@ Code
 
 According to the circuit, when the GPIO17 of RPi output level is high, the LED turns ON. Conversely, when the GPIO17 RPi output level is low, the LED turns OFF. Therefore, we can let GPIO17 cycle output high and output low level to make the LED blink. We will use both C code and Python code to achieve the target.
 
-01.0_Blink
+Blink
 ----------------------------------------------------------------
 
 .. hint:: 
@@ -244,7 +245,7 @@ Click this we can choose to use other sprites or upload a sprite.
 .. image:: ../_static/imgs/scratch_sprite.png
     :align: center
 
-01.1_Keyboard_LED 
+Keyboard_LED 
 ----------------------------------------------------------------
 
 The circuit is same as previous section.
@@ -263,7 +264,7 @@ Click the green flag. Then when you press space key on your keyboard, the LED wi
 .. image:: ../_static/imgs/scratch_led.png
     :align: center
 
-01.2_Sprite_LED 
+Sprite_LED 
 ----------------------------------------------------------------
 
 The circuit is same as previous section.

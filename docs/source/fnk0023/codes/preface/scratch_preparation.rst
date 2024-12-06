@@ -106,7 +106,7 @@ This folder name seems a little too long. We can simply rename it by using the f
 
 ``Freenove_Kit`` is now the new and much shorter folder name.
 
-.. image:: ../_static/p00-imgs/scrath_freenove_kit.png
+.. image:: ../_static/imgs/scrath_freenove_kit.png
     :align: center
 
 If you have no experience with Python, we suggest that you refer to this website for basic information and knowledge. 
@@ -121,7 +121,7 @@ Installation Steps
 
 Open the **Menu**, click on **Preferences** > **Recommended Software** > **Programming** >, and then select **Scratch 3** and click on **Apply**.
 
-.. image:: ../_static/p00-imgs/scratch_apply.png
+.. image:: ../_static/imgs/scratch_apply.png
     :align: center
 
 We can also install scratch3 in the terminal.
@@ -133,7 +133,7 @@ We can also install scratch3 in the terminal.
 
 Add scratch3 to desktop.
 
-.. image:: ../_static/p00-imgs/scratch_todesktop.png
+.. image:: ../_static/imgs/scratch_todesktop.png
     :align: center
 
 Add Raspberry Pi Library
@@ -141,11 +141,11 @@ Add Raspberry Pi Library
 
 Double click scratch3, which need some time to open it.
 
-.. image:: ../_static/p00-imgs/scratch_open.png
+.. image:: ../_static/imgs/scratch_open.png
     :align: center
 
-.. image:: ../_static/p00-imgs/scratch_open1.png
+.. image:: ../_static/imgs/scratch_open1.png
     :align: center
 
-.. image:: ../_static/p00-imgs/scratch_open2.png
+.. image:: ../_static/imgs/scratch_open2.png
     :align: center

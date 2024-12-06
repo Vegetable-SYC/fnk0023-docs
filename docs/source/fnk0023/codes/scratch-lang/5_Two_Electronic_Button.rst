@@ -49,7 +49,7 @@ Circuit
 Code
 ================================================================
 
-05.0_Two_Electronic_Button_LED
+Two_Electronic_Button_LED
 ----------------------------------------------------------------
 
 Load the code to scratch3.
@@ -65,7 +65,7 @@ There are two balls. We need write two sections of code for two GPIOs.
 .. image:: ../_static/imgs/scratch_t_button_code.png
     :align: center
 
-05.1_Squash
+Squash
 ----------------------------------------------------------------
 
 Load the code to scratch3.
@@ -83,7 +83,7 @@ There are two sprites moveing. So we need write two section of code. One is for 
 
 Pick random “range”. It can ne any one of 145~180, like: 145 150 180 146.
 
-05.2_Jump
+Jump
 ----------------------------------------------------------------
 
 Load the code to scratch3.

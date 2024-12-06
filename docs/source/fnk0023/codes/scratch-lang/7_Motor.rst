@@ -99,7 +99,7 @@ Use caution when connecting this circuit because the DC Motor is a high-power co
 Code
 ================================================================
 
-07.0_Motor
+Motor
 ----------------------------------------------------------------
 
 Load the code to scratch3.

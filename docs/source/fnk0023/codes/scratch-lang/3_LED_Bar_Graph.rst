@@ -66,7 +66,7 @@ Code
 
 This project is designed to make a flowing water lamp, which are these actions: First turn LED #1 ON, then turn it OFF. Then turn LED #2 ON, and then turn it OFF... and repeat the same to all 10 LEDs until the last LED is turns OFF. This process is repeated to achieve the “movements” of flowing water.
 
-03.0_LED_Bar_Graph
+LED_Bar_Graph
 ----------------------------------------------------------------
 
 First, observe the project result, and then learn about the code in detail.

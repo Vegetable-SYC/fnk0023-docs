@@ -98,7 +98,7 @@ Code
 
 This project is designed for learning how to use Push Button Switch to control an LED. We first need to read the state of switch, and then determine whether to turn the LED ON in accordance to the state of the switch.
 
-02.0_Electronic_Button_LED
+Electronic_Button_LED
 ----------------------------------------------------------------
 
 .. hint:: 
@@ -121,7 +121,7 @@ Click the green flag. Then when you press **button swtich**, the LED will be tur
 
 is to set a GPIO to input mode, which is used to detect button swtich condition.
 
-02.1_Floating_Ballon
+Floating_Ballon
 ----------------------------------------------------------------
 
 The circuit is same as previous section.
