@@ -1,359 +1,151 @@
 ##############################################################################
-Installing an Operating System
+0. Chapter Preparation
 ##############################################################################
 
-The first step is to install an operating system on your RPi so that it can be programmed and function. 
-If you have installed a system in your RPi, you can start from :doc:`Preparation<Scratch_preparation>`.
+Why “Chapter 0”? Because in program code the first number is 0. We choose to follow this rule. In this chapter, we will do some necessary foundational preparation work: Start your Raspberry Pi and install some necessary libraries. 
 
-Component List 
+Linux Command
 ****************************************************************
 
-Required Components
-================================================================
+ `Download the code  <https://github.com/Freenove/Freenove_Ultimate_Starter_Kit_for_Raspberry_Pi/archive/refs/heads/master.zip>`_ 
 
-.. list-table:: 
-    :width: 100%
-    :widths: 50 50
-    :class: product-table
+Raspberry Pi OS is based on the Linux Operation System. Now we will introduce you to some frequently used Linux commands and rules.
 
-    *   -   Any Raspberry Pi with 40 GPIO
-        -   5V/3A Power Adapter. Note: Different versions of Raspberry Pi have different power requirements (please check the power requirements for yours on the chart in the following page.)
-    *   -   |raspberrypi5-real|
-        -   |5v3a-power-adapter|
-    *   -   Micro or Type-C USB Cable x1
-        -   Micro SD Card (TF Card) x1, Card Reader x1
-    *   -   |usb-cable|
-        -   |tf-card-reader|
+First, open the Terminal. All commands are executed in Terminal. 
 
+.. image:: ../_static/p00-imgs/chapter00-01.png
 
-.. |raspberrypi5-real| image:: ../_static/imgs/raspberrypi5-real.jpg
-.. |5v3a-power-adapter| image:: ../_static/imgs/5v3a-power-adapter.jpg
-.. |usb-cable| image:: ../_static/imgs/usb-cable.jpg
-.. |tf-card-reader| image:: ../_static/imgs/tf-card-reader.png
+When you click the Terminal icon, following interface appears.
 
-Power requirements of various versions of Raspberry Pi are shown in following table:
+.. image:: ../_static/p00-imgs/chapter00-02.png
 
-+-------------------------+----------------------------------+----------------------------------------------------+------------------------------------------------+
-| Product                 | Recommended PSU current capacity | Maximum total USB peripheral current draw          | Typical bare-board active current consumption  |
-+=========================+==================================+====================================================+================================================+
-| Raspberry Pi 1 Model A  | 700mA                            | 500mA                                              | 200mA                                          |
-+-------------------------+----------------------------------+----------------------------------------------------+------------------------------------------------+
-| Raspberry Pi 1 Model B  | 1.2A                             | 500mA                                              | 500mA                                          |
-+-------------------------+----------------------------------+----------------------------------------------------+------------------------------------------------+
-| Raspberry Pi 1 Model A+ | 700mA                            | 500mA                                              | 180mA                                          |
-+-------------------------+----------------------------------+----------------------------------------------------+------------------------------------------------+
-| Raspberry Pi 1 Model B+ | 1.8A                             | 1.2A                                               | 330mA                                          |
-+-------------------------+----------------------------------+----------------------------------------------------+------------------------------------------------+
-| Raspberry Pi 2 Model B  | 1.8A                             | 1.2A                                               | 350mA                                          |
-+-------------------------+----------------------------------+----------------------------------------------------+------------------------------------------------+
-| Raspberry Pi 3 Model B  | 2.5A                             | 1.2A                                               | 400mA                                          |
-+-------------------------+----------------------------------+----------------------------------------------------+------------------------------------------------+
-| Raspberry Pi 3 Model A+ | 2.5A                             | Limited by PSU, board, and connector ratings only. | 350mA                                          |
-+-------------------------+----------------------------------+----------------------------------------------------+------------------------------------------------+
-| Raspberry Pi 3 Model B+ | 2.5A                             | 1.2A                                               | 500mA                                          |
-+-------------------------+----------------------------------+----------------------------------------------------+------------------------------------------------+
-| Raspberry Pi 4 Model B  | 3.0A                             | 1.2A                                               | 600mA                                          |
-+-------------------------+----------------------------------+----------------------------------------------------+------------------------------------------------+
-| Raspberry Pi 5          | 5.0A                             | 1.6A (600mA if using a 3A power supply)            | 800mA                                          |
-+-------------------------+----------------------------------+----------------------------------------------------+------------------------------------------------+
-| Raspberry Pi 400        | 3.0A                             | 1.2A                                               | 800mA                                          |
-+-------------------------+----------------------------------+----------------------------------------------------+------------------------------------------------+
-| Raspberry Pi Zero       | 1.2A                             | Limited by PSU, board, and connector ratings only  | 100mA                                          |
-+-------------------------+----------------------------------+----------------------------------------------------+------------------------------------------------+
+**Note: The Linux is case sensitive.**
+
+First, type ``ls`` into the Terminal and press the “Enter” key. The result is shown below:
+
+.. image:: ../_static/p00-imgs/chapter00-03.png
+
+The ``ls`` command lists information about the files (the current directory by default).
+
+Content between ``$`` and ``pi@raspberrypi:`` is the current working path. ``~`` represents the user directory, which refers to ``/home/pi`` here. 
+
+.. image:: ../_static/p00-imgs/chapter00-04.png
+
+``cd`` is used to change directory. / represents the root directory. 
+
+.. image:: ../_static/p00-imgs/chapter00-05.png
+
+Later in this Tutorial, we will often change the working path. Typing commands under the wrong directory may cause errors and break the execution of further commands. 
+
+Many frequently used commands and instructions can be found in the following reference table.
+    
++---------------+--------------------------------------------------------------------------------------------------+
+| Command       | instruction                                                                                      |
++===============+==================================================================================================+
+| ls            | Lists information about the FILEs (the current directory by default) and entries alphabetically. |
++---------------+--------------------------------------------------------------------------------------------------+
+| cd            | Changes directory                                                                                |
++---------------+--------------------------------------------------------------------------------------------------+
+| sudo + cmd    | Executes cmd under root authority                                                                |
++---------------+--------------------------------------------------------------------------------------------------+
+| ./            | Under current directory                                                                          |
++---------------+--------------------------------------------------------------------------------------------------+
+| gcc           | GNU Compiler Collection                                                                          |
++---------------+--------------------------------------------------------------------------------------------------+
+| git clone URL | Use git tool to clone the contents of specified repository, and URL in the repository address.   |
++---------------+--------------------------------------------------------------------------------------------------+
+
+There are many commands, which will come later. 
 
 .. seealso:: 
-    For more details, please refer to https://www.raspberrypi.org/help/faqs/#powerReqs
+    For more details about commands. You can refer to: http://www.linux-commands-examples.com
 
-In addition, RPi also needs an Ethernet network cable used to connect it to a WAN (Wide Area Network).
+Shortcut Key
+================================================================
+Now, we will introduce several commonly used shortcuts that are very useful in Terminal.
 
-The Raspberry Pi 5 provides 1.6A of power to downstream USB peripherals when connected to a power supply capable of 5A at +5V (25W). When connected to any other compatible power supply, the Raspberry Pi 5 restricts downstream USB devices to 600mA of power.
+1. **Up and Down Arrow Keys:** Pressing “↑” (the Up key) will go backwards through the command history and pressing “↓” (the Down Key) will go forwards through the command history.
 
-Optional Components
+2. **Tab Key:** The Tab key can automatically complete the command/path you want to type. When there is only one eligible option, the command/path will be completely typed as soon as you press the Tab key even you only type one character of the command/path. 
+
+As shown below, under the '~' directory, you enter the Documents directory with the “cd” command. After typing “cd D”, pressing the Tab key (there is no response), pressing the Tab key again then all the files/folders that begin with “D” will be listed. Continue to type the letters "oc" and then pressing the Tab key, the “Documents” is typed automatically.
+
+.. image:: ../_static/p00-imgs/chapter00-06.png
+
+.. image:: ../_static/p00-imgs/chapter00-07.png
+
+Obtain the Project Code
 ****************************************************************
 
-Under normal circumstances, there are two ways to login to Raspberry Pi: 
+After the above installation is completed, you can visit our official website (http://www.freenove.com) or 
+our GitHub resources at (https://github.com/freenove) to download the latest available project code. 
+We provide both :red:`C` language and Python language code for each project to allow ease of use for those who are skilled in either language. 
 
-1) Using a stand-alone monitor. 
-2) Using a remote desktop or laptop computer monitor “sharing” the PC monitor with your RPi.
+This is the method for obtaining the code:
 
-Required Accessories for Monitor
-================================================================
-
-If you choose to use an independent monitor, mouse and keyboard, you also need the following accessories:
-1. A display with a HDMI interface
-2. A Mouse and a Keyboard with an USB interface
-
-As to Pi Zero and Pi Zero W, you also need the following accessories:
-1.	A Mini-HDMI to HDMI Adapter and Cable.
-2.	A Micro-USB to USB-A Adapter and Cable (Micro USB OTG Cable). 
-3.	A USB HUB.
-4.	USB to Ethernet Interface or USB Wi-Fi receiver. 
-
-For different Raspberry Pi Modules, the optional items may vary slightly but they all aim to convert the interfaces to Raspberry Pi standards.
-
-+----------------------------------------------------------+--------------------------------------------+----------------------+----------------------+-----------------------+----------+-----------+-------+-------+
-|                                                          | Pi Zero                                    | Pi A+                | Pi Zero W            | Pi 3A+                | Pi B+/2B | Pi 3B/3B+ | Pi 4B | Pi 5  |
-+==========================================================+============================================+======================+======================+=======================+==========+===========+=======+=======+
-| Monitor                                                  | Yes (All)                                                                                                                                               |
-+----------------------------------------------------------+                                                                                                                                                         +
-| Mouse                                                    |                                                                                                                                                         |
-+----------------------------------------------------------+                                                                                                                                                         +
-| Keyboard                                                 |                                                                                                                                                         |
-+----------------------------------------------------------+--------------------------------------------+----------------------+----------------------+-----------------------+----------+-----------+-------+-------+
-| Micro-HDMI to HDMI Adapter & Cable                       | Yes                                        | No                   | Yes                  | No                    | No       | No        | No    | No    |
-+----------------------------------------------------------+--------------------------------------------+----------------------+----------------------+-----------------------+----------+-----------+-------+-------+
-| Micro-HDMI to HDMI Adapter & Cable                       | No                                         | Yes                  |                      |                       |          |           |       |       |
-+----------------------------------------------------------+--------------------------------------------+----------------------+----------------------+-----------------------+----------+-----------+-------+-------+
-| Micro-USB to USB-A Adapter & Cable (Micro USB OTG Cable) | Yes                                        | No                   | Yes                  | No                    |          |           |       |       |
-+----------------------------------------------------------+--------------------------------------------+----------------------+----------------------+-----------------------+----------+-----------+-------+-------+
-| USB HUB                                                  | Yes                                        | Yes                  | Yes                  | Yes                   | No       | No        | No    | No    |
-+----------------------------------------------------------+--------------------------------------------+----------------------+----------------------+-----------------------+----------+-----------+-------+-------+
-| USB to Ethernet Interface                                | select one from two or select two from two | optional             | Internal Integration | Internal Integration  |          |           |       |       |
-+----------------------------------------------------------+--------------------------------------------+----------------------+----------------------+-----------------------+----------+-----------+-------+-------+
-| USB Wi-Fi Receiver                                       |                                            | Internal Integration | optional             |                       |          |           |       |       |
-+----------------------------------------------------------+--------------------------------------------+----------------------+----------------------+-----------------------+----------+-----------+-------+-------+
-
-Required Accessories for Remote Desktop
-================================================================
-
-+----------------------------------------------------------+---------+-----------+-------+--------+----------+----------------+
-|                                                          | Pi Zero | Pi Zero W | Pi A+ | Pi 3A+ | Pi B+/2B | Pi 3B/3B+/4B/5 |
-+==========================================================+=========+===========+=======+========+==========+================+
-| Micro-USB to USB-A Adapter & Cable (Micro USB OTG Cable) | Yes     | Yes       | No    | NO                                 |
-+----------------------------------------------------------+---------+-----------+-------+                                    +
-| USB to Ethernet interface                                | Yes     | Yes       | Yes   |                                    |
-+----------------------------------------------------------+---------+-----------+-------+--------+----------+----------------+
-
-Raspberry Pi OS
-****************************************************************
-
-.. note:: 
-    | **Without Screen - Use Raspberry Pi - under Windows PC:** https://youtu.be/YND0RUuP-to
-    | **With Screen - Use Raspberry Pi - under Windows PC:** https://youtu.be/HEywFsFrj3I
-
-Automatically Method
-================================================================
-
-| You can follow the official method to install the system for raspberry pi via visiting link below:
-| https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/2
-| In this way, the system will be downloaded **automatically** via the application. 
-
-Manually Method
-================================================================
-
-After installing the Imager Tool in the **link above**. You can **also** download the system **manually** first. 
-
-Visit https://www.raspberrypi.org/downloads/
-
-
-.. image:: ../_static/imgs/install-system-01.png
-
-.. image:: ../_static/imgs/install-system-02.png
-
-And then the zip file is downloaded. 
-
-Write System to Micro SD Card 
-----------------------------------------------------------------
-
-First, put your Micro SD card into card reader and connect it to USB port of PC. 
-
-.. image:: ../_static/imgs/install-system-03.png
-
-Then open imager toll. Clicked Choose Device.
-
-.. image:: ../_static/imgs/install-system-04.png
-
-Select a Raspberry PI Device based on your Raspberry PI version. It will help us filter out the right version of the system for the Raspberry PI.
-
-.. image:: ../_static/imgs/install-system-05.png
-
-Clicked Operating System. 
-
-.. image:: ../_static/imgs/install-system-06.png
-
-Choose system that you just downloaded in Use custom.
-
-.. image:: ../_static/imgs/install-system-07.png
-
-Choose the SD card. Then click “Next”. 
-
-.. image:: ../_static/imgs/install-system-08.png
-
-You can configure the Raspberry PI according to your needs.
-
-.. image:: ../_static/imgs/install-system-09.png
-
-Enable ssh and configure WiFi
-================================================================
-On the GENERAL screen, configure your information based on your actual situation.
-Enable SSH on the SERVICES page.
-
-.. image:: ../_static/imgs/install-system-10.png
-    :width: 48%
-
-.. image:: ../_static/imgs/install-system-11.png
-    :width: 48%
-
-Click Save, in the new screen, click Yes, wait for SD to brush into the Raspberry system.
-
-.. image:: ../_static/imgs/install-system-12.png
-
-Insert SD card
-================================================================
-Then remove SD card from card reader and insert it into Raspberry Pi.
-
-.. image:: ../_static/imgs/install-system-13.png
-
-Connect to the power supply and wait for the Raspberry PI to turn on.
-
-Getting Started with Raspberry Pi
-****************************************************************
-
-Monitor desktop
-================================================================
-If you do not have a spare monitor, please skip to next section `Remote desktop & VNC`_. If you have a spare monitor, please follow the steps in this section. 
-
-After the system is written successfully, take out Micro SD Card and put it into the SD card slot of RPi. Then connect your RPi to the monitor through the HDMI port, attach your mouse and keyboard through the USB ports, attach a network cable to the network port and finally, connect your power supply (making sure that it meets the specifications required by your RPi Module Version. Your RPi should start (power up). Later, after setup, you will need to enter your user name and password to login. The default user name: pi; password: raspberry. After login, you should see the following screen.
-
-.. image:: ../_static/imgs/install-system-14.png
-
-**Congratulations!** You have successfully installed the RASPBERRY PI OS operating system on your RPi.
-
-Raspberry Pi 5, 4B, 3B+/3B integrates a Wi-Fi adaptor. You can use it to connect to your Wi-Fi. Then you can use the wireless remote desktop to control your RPi. This will be helpful for the following work. Raspberry Pi of other models can use wireless remote desktop through accessing an external USB wireless card.
-
-.. image:: ../_static/imgs/install-system-15.png
-
-Remote desktop & VNC
-================================================================
-
-**If you have logged in Raspberry Pi via display, you can skip to** `VNC Viewer & VNC`_.
-
-If you don't have a spare display, mouse and keyboard for your RPi, you can use a remote desktop to share a display, keyboard, and mouse with your PC. Below is how to use: 
-`MAC OS remote desktop`_ and `Windows OS remote desktop`_.
-
-MAC OS Remote Desktop
-----------------------------------------------------------------
-
-Open the terminal and type following command. :red:`If this command doesn't work, please move to next page.`
-
-.. code-block:: console
-
-    $ ssh pi@raspberrypi.local
-
-The password is **raspberry** by default, case sensitive. You may need to type **yes** during the process.
-
-.. image:: ../_static/imgs/install-system-16.png
-
-.. image:: ../_static/imgs/install-system-17.png
-
-You can also use the IP address to log in Pi. 
-
-Enter **router** client to **inquiry IP address** named **“raspberry pi”**. For example, I have inquired to **my RPi IP address, and it is “192.168.1.95".**
-
-Open the terminal and type following command.
-
-.. code-block:: console
-
-    $ ssh pi@192.168.1.95
-
-When you see :red:`pi@raspberrypi:`:blue:`~ $`, you have logged in Pi successfully. Then you can skip to next section.
-
-.. image:: ../_static/imgs/install-system-18.png
-
-Then you can skip to `VNC Viewer & VNC`_.
-
-Windows OS Remote Desktop
-----------------------------------------------------------------
-**If you are using win10, you can use follow way to login Raspberry Pi without desktop.**
-Press `Win+R`. Enter `cmd`. Then use this command to check IP:
-
-.. code-block:: console
-
-    $ ping -4 raspberrypi.local
-
-.. image:: ../_static/imgs/install-system-19.png
-
-| Then 192.168.1.147 is my Raspberry Pi IP.
-| Or enter **router** client to **inquiry IP address** named **“raspberrypi”**. For example, I have inquired to **my RPi IP address, and it is “192.168.1.95".**
+In the pi directory of the RPi terminal, enter the following command.
 
 .. code-block:: console
     
-    $ ssh pi@xxxxxxxxxxx(IP address)
+    $ cd
+    $ git clone --depth 1 https://github.com/freenove/Freenove_Complete_Starter_Kit_for_Raspberry_Pi
 
-Enter the following command:
+:red:`(There is no need for a password. If you get some errors, please check your commands.)`
 
-.. code-block:: console
-    
-    $ ssh pi@192.168.1.95
+.. image:: ../_static/p00-imgs/chapter00-11.png
 
-.. image:: ../_static/imgs/install-system-20.png
+.. image:: ../_static/p00-imgs/chapter00-12.png
 
-VNC Viewer & VNC
-----------------------------------------------------------------
+After the download is completed, a new folder "Freenove_Complete_Starter_Kit_for_Raspberry_Pi" is generated, which contains all of the tutorials and required code.
 
-Enable VNC
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Type the following command. And select Interface Options->P5 VNC -> Enter->Yes->OK. Here Raspberry Pi may need be restarted, and choose ok. Then open VNC interface. 
+This folder name seems a little too long. We can simply rename it by using the following command. 
 
 .. code-block:: console
     
-    $ sudo raspi-config
+    $ mv Freenove_Complete_Starter_Kit_for_Raspberry_Pi/ Freenove_Kit/
 
-.. image:: ../_static/imgs/install-system-21.png
+``Freenove_Kit`` is now the new and much shorter folder name.
 
-.. image:: ../_static/imgs/install-system-22.png
+.. image:: ../_static/p00-imgs/scrath_freenove_kit.png
+    :align: center
 
-.. image:: ../_static/imgs/install-system-23.png
+If you have no experience with Python, we suggest that you refer to this website for basic information and knowledge. 
 
-.. image:: ../_static/imgs/install-system-24.png
+https://python.swaroopch.com/basics.html
 
-| Then download and install VNC Viewer according to your computer system by click following link:
-| https://www.realvnc.com/en/connect/download/viewer/
-| After installation is completed, open VNC Viewer. And click File -> New Connection. Then the interface is shown below. 
+Install and Configure Scratch 3
+****************************************************************
 
-.. image:: ../_static/imgs/install-system-25.png
+Installation Steps
+================================================================
 
-| Enter ip address of your Raspberry Pi and fill in a name. Then click OK.
-| Then on the VNC Viewer panel, double-click new connection you just created, 
+Open the **Menu**, click on **Preferences** > **Recommended Software** > **Programming** >, and then select **Scratch 3** and click on **Apply**.
 
-.. image:: ../_static/imgs/install-system-26.png
+.. image:: ../_static/p00-imgs/scratch_apply.png
+    :align: center
 
-and the following dialog box pops up.  
+We can also install scratch3 in the terminal.
 
-.. image:: ../_static/imgs/install-system-27.png
+.. code-block:: console
+    
+    $ sudo apt-get update
+    $ sudo apt-get install scratch3
 
-Enter username: **pi** and Password: **raspberry**. And click OK.     
+Add scratch3 to desktop.
 
-.. image:: ../_static/imgs/install-system-28.png
+.. image:: ../_static/p00-imgs/scratch_todesktop.png
+    :align: center
 
-Here, you have logged in to Raspberry Pi successfully by using VNC Viewer
+Add Raspberry Pi Library
+================================================================
 
-.. image:: ../_static/imgs/install-system-29.png
+Double click scratch3, which need some time to open it.
 
-If there is black window, please `set resolution`_.
+.. image:: ../_static/p00-imgs/scratch_open.png
+    :align: center
 
-set resolution
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-You can also set other resolutions. 
+.. image:: ../_static/p00-imgs/scratch_open1.png
+    :align: center
 
-.. image:: ../_static/imgs/install-system-30.png
-
-If you don't know what resolution to set properly, you can try 1920x1080.
-
-.. image:: ../_static/imgs/install-system-31.png
-
-In addition, your VNC Viewer window may zoom your Raspberry Pi desktop. You can change it. On your VNC View control panel, click right key. And select Properties->Options label->Scaling. Then set proper scaling. 
-
-.. image:: ../_static/imgs/install-system-32.png
-
-.. image:: ../_static/imgs/install-system-33.png
-
-Here, you have logged in to Raspberry Pi successfully by using VNC Viewer and operated proper setting.
-
-Raspberry Pi 5/4B/3B+/3B integrates a Wi-Fi adaptor.If you did not connect Pi to WiFi. You can connect it to wirelessly control the robot.
-
-.. image:: ../_static/imgs/install-system-34.png
-
-
-
+.. image:: ../_static/p00-imgs/scratch_open2.png
+    :align: center

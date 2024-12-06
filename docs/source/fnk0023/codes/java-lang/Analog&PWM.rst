@@ -14,25 +14,23 @@ We describe this project as a Breathing Light. This means that an LED that is OF
 Component List
 ================================================================
 
-1. Raspberry Pi (with 40 GPIO) x1
-GPIO Extension Board & Ribbon Cable x1
-Breadboard x1
++-------------------------------------------------+-------------------------------------------------+
+|1. Raspberry Pi (with 40 GPIO) x1                |                                                 |     
+|                                                 |   Jumper Wires x1                               |       
+|2. GPIO Extension Board & Ribbon Cable x1        |                                                 |       
+|                                                 |     |jumper-wire|                               |                                                            
+|3. Breadboard x1                                 |                                                 |                                                                 
++-------------------------------------------------+-------------------------------------------------+
+|  LED x1                                         |   Resistor 220Ω x 1                             |
+|                                                 |                                                 |
+|   |LED|                                         |    |res-220R-hori|                              |
++-------------------------------------------------+-------------------------------------------------+
 
-2. Jumper Wire x 1
-
-.. image:: ../_static/imgs/jumper-wire.png
-        :width: 25%
-
-3. LED x1
-
-.. image:: ../_static/imgs/red-led.png
-        :width: 5%
-
-4. Resistor 220Ω x 1
-
-.. image:: ../_static/imgs/res-220R-hori.png
-        :width: 15%
-
+.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
+.. |res-220R-hori| image:: ../_static/imgs/res-220R-hori.png
+    :width: 60%
+.. |LED| image:: ../_static/imgs/red-led.png
+    :width: 20%
 
 Component Knowledge
 ================================================================

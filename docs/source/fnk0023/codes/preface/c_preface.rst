@@ -3,7 +3,7 @@ Get Started
 ##############################################################################
 Get Started
 ****************************************************************
-12345678
+
 **Thank you for choosing Freenove products!**
 
 After you download the ZIP file we provide. Unzip it and you will get a folder contains several files and folders.

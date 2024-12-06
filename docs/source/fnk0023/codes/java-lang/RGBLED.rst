@@ -3,6 +3,7 @@ Chapter RGB LED
 ##############################################################################
 
 In this chapter, we will learn how to control a RGB LED.
+
 An RGB LED has 3 LEDs integrated into one LED component. It can respectively emit Red, Green and Blue light. In order to do this, it requires 4 pins (this is also how you identify it). The long pin (1) is the common which is the Anode (+) or positive lead, the other 3 are the Cathodes (-) or negative leads. A rendering of a RGB LED and its electronic symbol are shown below. We can make RGB LED emit various colors of light and brightness by controlling the 3 Cathodes (2, 3 & 4) of the RGB LED
 
 .. list-table::
@@ -28,6 +29,7 @@ Red, Green, and Blue light are called 3 Primary Colors when discussing light (No
     RGB
 
 If we use a three 8 bit PWM to control the RGB LED, in theory, we can create 28*28*28=16777216 (16 million) colors through different combinations of RGB light brightness.
+
 Next, we will use RGB LED to make a multicolored LED. 
 
 Project Multicolored LED

@@ -35,11 +35,6 @@ Breadboard x1
 
 Circuit
 ================================================================
-
-.. table:: 
-    :width: 100%
-    :widths: 50 50
-    :align: middle
     
 ==================  ================================================
 Schematic diagram   Hardware connection. If you need any support,

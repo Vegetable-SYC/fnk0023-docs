@@ -13,11 +13,6 @@ A Thermistor is a type of Resistor whose resistance value is dependent on temper
 Component List
 ================================================================
 
-.. table:: 
-    :width: 50%
-    :widths: 20 50
-    :align: center
-
 +---------------------------------------------------------------+
 |1. Raspberry Pi (with 40 GPIO) x1                              |     
 |                                                               |       
@@ -40,8 +35,11 @@ Component List
 +---------------------------------------------------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
+    :width: 80%
 .. |Resistor-10kΩ| image:: ../_static/imgs/Resistor-10kΩ.png
+    :width: 10%
 .. |Thermistor| image:: ../_static/imgs/Thermistor.png
+    :width: 30%
 .. |ADC-module-1| image:: ../_static/imgs/ADC-module-1.png
 .. |ADC-module-2| image:: ../_static/imgs/ADC-module-2.png
 
@@ -55,9 +53,11 @@ Thermistor is a temperature sensitive resistor. When it senses a change in tempe
 
 .. image:: ../_static/imgs/Thermistor.png
         :width: 10%
+        :align: center
 
 .. image:: ../_static/imgs/Thermistor-2.png
         :width: 15%
+        :align: center
 
 The relationship between resistance value and temperature of a thermistor is:
 
@@ -73,12 +73,15 @@ The relationship between resistance value and temperature of a thermistor is:
     - T1, T2 is Kelvin temperature (absolute temperature). Kelvin temperature=273.15 + Celsius temperature.
 
 For the parameters of the Thermistor, we use: B=3950, R=10k, T1=25.
+
 The circuit connection method of the Thermistor is similar to photoresistor, as the following:
 
 .. image:: ../_static/imgs/Thermistor-3.png
         :width: 20%
+        :align: center
 
 We can use the value measured by the ADC converter to obtain the resistance value of Thermistor, and then we can use the formula to obtain the temperature value.
+
 Therefore, the temperature formula can be derived as:
 
 .. container:: centered

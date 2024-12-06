@@ -1,9 +1,10 @@
 ##############################################################################
 Get Started
 ##############################################################################
+
 Get Started
 ****************************************************************
-12345678
+
 **Thank you for choosing Freenove products!**
 
 After you download the ZIP file we provide. Unzip it and you will get a folder contains several files and folders.
@@ -86,6 +87,7 @@ Copyright
 ****************************************************************
 All the files, materials and instructional guides provided are released under 
 `Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License <https://creativecommons.org/licenses/by-nc-sa/3.0/>`_ . 
+
 A copy of this license can be found in the folder containing the Tutorial and software files associated with this product.
 
 .. image:: ../_static/imgs/by-nc-sa.png
@@ -219,6 +221,7 @@ Installing an Operating System
 ##############################################################################
 
 The first step is to install an operating system on your RPi so that it can be programmed and function. 
+
 If you have installed a system in your RPi, you can start from :doc:`Preparation<python_preparation>`.
 
 Component List 
@@ -402,6 +405,7 @@ You can configure the Raspberry PI according to your needs.
 Enable ssh and configure WiFi
 ================================================================
 On the GENERAL screen, configure your information based on your actual situation.
+
 Enable SSH on the SERVICES page.
 
 .. image:: ../_static/imgs/install-system-10.png
@@ -480,7 +484,9 @@ Then you can skip to `VNC Viewer & VNC`_.
 
 Windows OS Remote Desktop
 ----------------------------------------------------------------
+
 **If you are using win10, you can use follow way to login Raspberry Pi without desktop.**
+
 Press `Win+R`. Enter `cmd`. Then use this command to check IP:
 
 .. code-block:: console

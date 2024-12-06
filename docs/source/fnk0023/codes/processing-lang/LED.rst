@@ -205,7 +205,6 @@ GPIO board is a convenient way to connect the RPi I/O ports to the breadboard di
 .. image:: ../_static/imgs/raspberrypi-extension-describe.png
     :width: 90%
 
-
 Sketch
 ================================================================
 
@@ -352,9 +351,6 @@ The function mouseClicked() in this code is used to capture the mouse click even
     :linenos: 
     :language: java
     :lines: 27-29
-
-
-
 
 Freenove Car, Robot and other products for Raspberry Pi
 ================================================================

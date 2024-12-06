@@ -184,7 +184,9 @@ The ADS7830 is a single-supply, low-power, 8-bit data acquisition device that fe
 +-----------+-----+---------------------------------------------------+                                               |
 |  GND      |  9  |   Ground                                          |                                               |
 +-----------+-----+---------------------------------------------------+                                               |
-|REF in/out |  10 | Internal +2.5V Reference,External Reference Input |                                               |
+|           |     | Internal +2.5V Reference,External                 |                                               |
+|REF in/out |  10 |                                                   |                                               |
+|           |     | Reference Input                                   |                                               |
 +-----------+-----+---------------------------------------------------+                                               |
 |  COM      |  11 |   Common to Analog Input Channel                  |                                               |
 +-----------+-----+---------------------------------------------------+                                               |
@@ -339,7 +341,7 @@ For C code for the ADC Device, a custom library needs to be installed.
 
     $ sh ./build.sh
 
-3. A successful installation, without error prompts, is shown below:
+1. A successful installation, without error prompts, is shown below:
 
 .. image:: ../_static/imgs/build.sh.png
         :width: 100%

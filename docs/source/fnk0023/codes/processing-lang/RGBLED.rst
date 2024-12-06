@@ -54,6 +54,7 @@ Sketch 4.1.1 ColorfulLED
 ----------------------------------------------------------------
 
 First, observe the result after running the sketch, and then learn about the code in detail.
+
 1.	Use Processing to open the file Sketch_04_1_1_ColorfulLED.
 
 .. code-block:: console    

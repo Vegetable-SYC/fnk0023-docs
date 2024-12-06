@@ -8,12 +8,6 @@ Project Doorbell
 ****************************************************************
 We will make a doorbell with this functionality: when the Push Button Switch is pressed the buzzer sounds and when the button is released, the buzzer stops. This is a momentary switch function.
 
-.. table:: 
-    :width: 50%
-    :height: 50%
-    :widths: 50 50
-    :align: center
-
 +-----------------------------------------------------------+
 |    Raspberry Pi (with 40 GPIO) x1                         |     
 |                                                           |       
@@ -67,6 +61,7 @@ Sketch 5.1.1 ActiveBuzzer
 ----------------------------------------------------------------
 
 First, observe the result after running the sketch, and then learn about the code in detail.
+
 1.	Use Processing to open the file Sketch_05_1_1_ActiveBuzzer.
 
 .. code-block:: console    

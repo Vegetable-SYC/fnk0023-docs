@@ -23,7 +23,7 @@ Component List
 +----------------------------------------------------------------------------------------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
-.. |BMP180| image:: ../_static/imgs/LEDpixel.png
+.. |BMP180| image:: ../_static/imgs/BMP180.png
     :width: 40%
 
 Component knowledge

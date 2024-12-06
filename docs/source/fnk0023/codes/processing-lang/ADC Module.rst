@@ -101,6 +101,7 @@ Enable I2C
 ----------------------------------------------------------------
 
 The I2C interface in Raspberry Pi is disabled by default. You will need to open it manually and enable the I2C interface as follows:
+
 Type command in the Terminal:
 
 .. code-block:: console
@@ -114,6 +115,7 @@ Then open the following dialog box:
         :align: center
 
 Choose “3 Interfacing Options” then “I4 I2C” then “Yes” and then “Finish” in this order and restart your RPi. The I2C module will then be started.
+
 Type a command to check whether the I2C module is started:
 
 .. code-block:: console
@@ -163,6 +165,7 @@ Sketch 6.1.1 ADC
 ----------------------------------------------------------------
 
 First, observe the result after running the sketch, and then learn about the code in detail.
+
 1.	Use Processing to open the file Sketch_06_1_1_ADC.
 
 .. code-block:: console

@@ -87,6 +87,7 @@ Sketch 7.1.1 SoftLight
 ----------------------------------------------------------------
 
 First, observe the result after running the sketch, and then learn about the code in detail.
+
 1.	Use Processing to open the file Sketch_07_1_1_SoftLight.
 
 .. code-block:: console
@@ -124,11 +125,6 @@ A Photoresistor is very sensitive to the amount of light present. We can take ad
 
 Component List
 ================================================================
-
-.. table:: 
-    :width: 30%
-    :widths: 20 20
-    :align: center
 
 +-------------------------------------------------+-------------------------------+
 |1. Raspberry Pi (with 40 GPIO) x1                |    220Ω x3                    |     

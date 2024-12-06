@@ -2,7 +2,6 @@
 Chapter Analog & PWM
 ################################################################
 
-
 In previous chapters, we learned that a Push Button Switch has two states: Pressed (ON) and Released (OFF), and an LED has a Light ON and OFF state. Is there a middle or intermediated state? We will next learn how to create an intermediate output state to achieve a partially bright (dim) LED.
 
 First, let us learn how to control the brightness of an LED.
@@ -15,24 +14,23 @@ We describe this project as a Breathing Light. This means that an LED that is OF
 Component List
 ================================================================
 
-1. Raspberry Pi (with 40 GPIO) x1
-GPIO Extension Board & Ribbon Cable x1
-Breadboard x1
++-------------------------------------------------+-------------------------------------------------+
+|1. Raspberry Pi (with 40 GPIO) x1                |                                                 |     
+|                                                 |   Jumper Wires x1                               |       
+|2. GPIO Extension Board & Ribbon Cable x1        |                                                 |       
+|                                                 |     |jumper-wire|                               |                                                            
+|3. Breadboard x1                                 |                                                 |                                                                 
++-------------------------------------------------+-------------------------------------------------+
+|  LED x1                                         |   Resistor 220Ω x 1                             |
+|                                                 |                                                 |
+|   |LED|                                         |    |res-220R-hori|                              |
++-------------------------------------------------+-------------------------------------------------+
 
-2. Jumper Wire x 1
-
-.. image:: ../_static/imgs/jumper-wire.png
-        :width: 25%
-
-3. LED x1
-
-.. image:: ../_static/imgs/red-led.png
-        :width: 5%
-
-4. Resistor 220Ω x 1
-
-.. image:: ../_static/imgs/res-220R-hori.png
-        :width: 15%
+.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
+.. |res-220R-hori| image:: ../_static/imgs/res-220R-hori.png
+    :width: 60%
+.. |LED| image:: ../_static/imgs/red-led.png
+    :width: 20%
 
 
 Component Knowledge
@@ -46,7 +44,7 @@ An Analog Signal is a continuous signal in both time and value. On the contrary,
         :width: 100%
 
 Note that the Analog signals are curved waves and the Digital signals are “Square Waves”. 
-In practical applications, we often use binary as the digital signal, that is a series of 0’s and 1’s. Since a binary signal only has two values (0 or 1) it has great stability and reliability. Lastly, both analog and digital signals can be converted into the other.
+In practical applications, we often use binary as the digital signal, that is a series of 0's and 1's. Since a binary signal only has two values (0 or 1) it has great stability and reliability. Lastly, both analog and digital signals can be converted into the other.
 
 PWM
 ----------------------------------------------------------------
@@ -58,8 +56,11 @@ PWM technology uses digital pins to send certain frequencies of square waves, th
         :width: 100%
 
 The longer the PWM duty cycle is, the higher the output power will be. Now that we understand this relationship, we can use PWM to control the brightness of an LED or the speed of DC motor and so on.
+
 It is evident, from the above, that PWM is not actually analog but the effective value of voltage is equivalent to the corresponding analog value. Therefore, by using PWM, we can control the output power of to an LED and control other devices and modules to achieve multiple effects and actions.
+
 In RPi, GPIO18 pin has the ability to output to hardware via PWM with a 10-bit accuracy. This means that 100% of the pulse width can be divided into 210=1024 equal parts.
+
 The wiringPi library of C provides both a hardware PWM and a software PWM method.
 
 The hardware PWM only needs to be configured, does not require CPU resources and is more precise in time control. The software PWM requires the CPU to work continuously by using code to output high level and low level. This part of the code is carried out by multi-threading, and the accuracy is relatively not high enough. 
@@ -69,11 +70,6 @@ In order to keep the results running consistently, we will use PWM.
 Circuit
 ================================================================
 
-.. table:: 
-    :width: 100%
-    :widths: 50 50
-    :align: middle
-    
 ==================  ================================================
 Schematic diagram   Hardware connection. If you need any support,
  
@@ -154,8 +150,7 @@ led.value represents:The duty cycle of the PWM device. 0.0 is off, 1.0 is fully 
     :language: python
     :lines: 12-21
 
-For more information about the methods used by the PWMLED class in the GPIO Zero library,please refer to:
-https://gpiozero.readthedocs.io/en/stable/api_output.html#pwmled
+For more information about the methods used by the PWMLED class in the GPIO Zero library,please refer to: https://gpiozero.readthedocs.io/en/stable/api_output.html#pwmled
 
 For more information about the methods used by the PWMOutputDevice class in the GPIO Zero library,please refer to: https://gpiozero.readthedocs.io/en/stable/api_output.html#pwmoutputdevice
 

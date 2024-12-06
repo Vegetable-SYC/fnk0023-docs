@@ -10,12 +10,6 @@ Project Doorbell
 
 We will make a doorbell with this functionality: when the Push Button Switch is pressed the buzzer sounds and when the button is released, the buzzer stops. This is a momentary switch function.
 
-.. table:: 
-    :width: 50%
-    :height: 50%
-    :widths: 50 50
-    :align: center
-
 +-----------------------------------------------------------+
 |    Raspberry Pi (with 40 GPIO) x1                         |     
 |                                                           |       
@@ -43,7 +37,7 @@ We will make a doorbell with this functionality: when the Push Button Switch is 
 .. |Resistor-1kΩ| image:: ../_static/imgs/Resistor-1kΩ.png
     :width: 18%
 .. |Resistor-10kΩ| image:: ../_static/imgs/Resistor-10kΩ.png
-    :width: 10%
+    :width: 16%
 .. |button-small| image:: ../_static/imgs/button-small.jpg
     :width: 30%
 .. |Active-buzzer| image:: ../_static/imgs/Active-buzzer.png
@@ -102,6 +96,7 @@ Transistors
 ----------------------------------------------------------------
 
 A transistor is required in this project due to the buzzer's current being so great that GPIO of RPi's output capability cannot meet the power requirement necessary for operation. A NPN transistor is needed here to amplify the current. 
+
 Transistors, full name: semiconductor transistor, is a semiconductor device that controls current think of a transistor as an electronic “amplifying or switching device”. Transistors can be used to amplify weak signals, or to work as a switch. Transistors have three electrodes (PINs): base (b), collector (c) and emitter (e). When there is current passing between "be" then "ce" will have a several-fold current increase (transistor magnification), in this configuration the transistor acts as an amplifier. When current produced by "be" exceeds a certain value, "ce" will limit the current output. at this point the transistor is working in its saturation region and acts like a switch. Transistors are available as two types as shown below: PNP and NPN,
 
 .. image:: ../_static/imgs/PNP-transistor.png
@@ -124,7 +119,9 @@ Transistors, full name: semiconductor transistor, is a semiconductor device that
     In our kit, the PNP transistor is marked with 8550, and the NPN transistor is marked with 8050.
 
 Thanks to the transistor's characteristics, they are often used as switches in digital circuits. As micro-controllers output current capacity is very weak, we will use a transistor to amplify its current in order to drive components requiring higher current.
+
 When we use a NPN transistor to drive a buzzer, we often use the following method. If GPIO outputs high level, current will flow through R1 (Resistor 1), the transistor conducts current and the buzzer will make sounds. If GPIO outputs low level, no current will flow through R1, the transistor will not conduct currentand buzzer will remain silent (no sounds).
+
 When we use a PNP transistor to drive a buzzer, we often use the following method. If GPIO outputs low level, current will flow through R1. The transistor conducts current and the buzzer will make sounds. If GPIO outputs high level, no current flows through R1, the transistor will not conduct current and buzzer will remain silent (no sounds). Below are the circuit schematics for both a NPN and PNP transistor to power a buzzer.
 
 ======================================  ================================================
@@ -198,6 +195,7 @@ The following is the program code:
     :language: python
 
 The code is exactly the same as when we used a push button switch to control an LED. You can also try using the PNP transistor to achieve the same results.
+
 Import the Buzzer class that controls Buzzer from the gpiozero library.
 
 .. code-block:: python
@@ -220,8 +218,7 @@ Once it detects that the button is pressed, it executes the specified function o
     button.when_pressed = onButtonPressed
     button.when_released = onButtonReleased
 
-For more information about the methods used by the Buzzer class in the GPIO Zero library,please refer to:
-https://gpiozero.readthedocs.io/en/stable/api_output.html#buzzer
+For more information about the methods used by the Buzzer class in the GPIO Zero library,please refer to: https://gpiozero.readthedocs.io/en/stable/api_output.html#buzzer
 
 Project 6.2 Alertor
 ****************************************************************

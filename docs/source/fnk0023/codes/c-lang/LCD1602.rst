@@ -90,7 +90,7 @@ First, observe the project result, and then learn about the code in detail.
 .. hint:: 
     :red:`If you have any concerns, please contact us via:` support@freenove.com
 
-1.	Use ``cd`` command to enter 20.1.1_ I2CLCD1602 directory of C code.
+1.	Use ``cd`` command to enter ``20.1.1_ I2CLCD1602`` directory of C code.
 
 .. code-block:: console
 

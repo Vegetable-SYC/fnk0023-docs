@@ -37,7 +37,7 @@ We will make a doorbell with this functionality: when the Push Button Switch is 
 .. |Resistor-1kΩ| image:: ../_static/imgs/Resistor-1kΩ.png
     :width: 18%
 .. |Resistor-10kΩ| image:: ../_static/imgs/Resistor-10kΩ.png
-    :width: 10%
+    :width: 16%
 .. |button-small| image:: ../_static/imgs/button-small.jpg
     :width: 30%
 .. |Active-buzzer| image:: ../_static/imgs/Active-buzzer.png

@@ -13,7 +13,7 @@ Scratch language tutorial
    :titlesonly: 
    :caption: Preparation
    
-   ../codes/preface/scratch_preparation.rst
+   codes/preface/scratch_preparation.rst
 
 
 .. toctree::
@@ -23,8 +23,8 @@ Scratch language tutorial
    
    codes/scratch-lang/1_LED.rst
    codes/scratch-lang/2_ButtonAndLEDs.rst
-   codes/scratch-lang/3_LED Bar Graph.rst
-   codes/scratch-lang/4_RGB LED.rst
+   codes/scratch-lang/3_LED_Bar_Graph.rst
+   codes/scratch-lang/4_RGB_LED.rst
    codes/scratch-lang/5_Two_Electronic_Button.rst
    codes/scratch-lang/6_Buzzer.rst
    codes/scratch-lang/7_Motor.rst

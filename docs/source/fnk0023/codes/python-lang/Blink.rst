@@ -13,51 +13,52 @@ In this project, we will use RPi to control blinking a common LED.
 Component List
 ================================================================
 
-1.  | Raspberry Pi 
-    | (Recommended: Raspberry Pi 5 / 4B / 3B+ / 3B) 
-    | (Compatible: 3A+ / 2B / 1B+ / 1A+ / Zero W / Zero) 
++-----------------------------------------------------------+
+|    Raspberry Pi                                           |     
+|                                                           |       
+|    (Recommended: Raspberry Pi 5 / 4B / 3B+ / 3B)          |       
+|                                                           |                                                            
+|    (Compatible: 3A+ / 2B / 1B+ / 1A+ / Zero W / Zero)     |                                                                 
+|                                                           | 
+|     |raspberrypi5|                                        | 
++---------------------------+-------------------------------+
+| LED x1                    | Breadboard x1                 |
+|                           |                               |
+|  |red-led|                |  |breadborad-830|             |                         
++---------------------------+----------+--------------------+
+|  GPIO Extension Board & Ribbon Cable | Resistor 220Ω x1   |
+|                                      |                    | 
+|   |extension-board|                  |  |res-220R|        |
++--------------------------------------+--------------------+
 
-    .. image:: ../_static/imgs/raspberrypi5.png
-        :height: 100
-
-2.  GPIO Extension Board & Ribbon Cable
-
-    .. image:: ../_static/imgs/raspberrypi-extension-board.jpg
-        :height: 100
-
-3.  Breadboard x1
-
-    .. image:: ../_static/imgs/breadborad-830.jpg
-        :height: 100
-
-4.  LED x1
-
-    .. image:: ../_static/imgs/red-led.png
-        :height: 100
-
-5.  Resistor 220Ω x1
-
-    .. image:: ../_static/imgs/res-220R.png
-        :height: 100
-
-6.  Jumper (some)
-
-    .. image:: ../_static/imgs/jumper-wire.png
-        :height: 20
+.. |raspberrypi5| image:: ../_static/imgs/raspberrypi5.png
+    :width: 60%
+.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
+    :width: 60%
+.. |extension-board| image:: ../_static/imgs/raspberrypi-extension-board.jpg
+    :width: 70%
+.. |breadborad-830| image:: ../_static/imgs/breadborad-830.jpg
+    :width: 80%
+.. |red-led| image:: ../_static/imgs/red-led.png
+    :width: 15%
+.. |res-220R| image:: ../_static/imgs/res-220R.png
+    :width: 10%
 
 In the components list, 3B GPIO, Extension Shield Raspberry and Breadboard are necessary for each project. Later, they will be reference by text only (no images as in above).
 
 GPIO
 ================================================================
+
 GPIO: General Purpose Input/Output. Here we will introduce the specific function of the pins on the Raspberry Pi and how you can utilize them in all sorts of ways in your projects. Most RPi Module pins can be used as either an input or output, depending on your program and its functions.
 
 When programming GPIO pins there are 3 different ways to reference them: **GPIO Numbering**, **Physical Numbering** and **WiringPi GPIO Numbering**.
 
 BCM GPIO Numbering
 ---------------------------------------------------------------
+
 The Raspberry Pi CPU uses Broadcom (BCM) processing chips BCM2835, BCM2836 or BCM2837. GPIO pin numbers are assigned by the processing chip manufacturer and are how the computer recognizes each pin. The pin numbers themselves do not make sense or have meaning as they are only a form of identification. Since their numeric values and physical locations have no specific order, there is no way to remember them so you will need to have a printed reference or a reference board that fits over the pins.
 
-Each pin’s functional assignment is defined in the image below:
+Each pin's functional assignment is defined in the image below:
     .. image:: ../_static/imgs/raspberrypi5-cc90.png
         :height: 500
 
@@ -69,6 +70,7 @@ Each pin’s functional assignment is defined in the image below:
 
 PHYSICAL Numbering
 ---------------------------------------------------------------
+
 Another way to refer to the pins is by simply counting across and down from pin 1 at the top left (nearest to the SD card). This is 'Physical Numbering', as shown below:
 
 .. image:: ../_static/imgs/PHYSICAL-Numbering.png
@@ -76,6 +78,7 @@ Another way to refer to the pins is by simply counting across and down from pin 
 
 WiringPi GPIO Numbering
 ---------------------------------------------------------------
+
 Different from the previous two types of GPIO serial numbers, RPi GPIO serial number of the WiringPi are numbered according to the BCM chip use in RPi.
 
 .. image:: ../_static/imgs/WiringPi-GPIO-Numbering.png
@@ -95,6 +98,7 @@ You can also use the following command to view their correlation.
 
 Circuit
 ================================================================
+
 First, disconnect your RPi from the GPIO Extension Shield. Then build the circuit according to the circuit and hardware diagrams. After the circuit is built and verified correct, connect the RPi to GPIO Extension Shield. 
 
 .. caution:: 
@@ -118,6 +122,7 @@ First, disconnect your RPi from the GPIO Extension Shield. Then build the circui
 
 .. attention:: 
     Do NOT rotate Raspberry Pi to change the way of this connection.
+    
     Please plug T extension fully into breadboard.
 
 .. note:: 
@@ -136,6 +141,7 @@ The connection of Raspberry Pi T extension board is as below. **Don't reverse th
     If you have a fan, you can connect it to 5V GND of breadboard via jumper wires.
 
 **How to distinguish resistors?**
+
 There are only three kind of resistors in this kit.
 
 1. The one with *1 red ring* is 10KΩ \
@@ -161,6 +167,7 @@ Component knowledge
 
 LED
 ----------------------------------------------------------------
+
 An LED is a type of diode. All diodes only work if current is flowing in the correct direction and have two Poles. An LED will only work (light up) if the longer pin (+) of LED is connected to the positive output from a power source and the shorter pin is connected to the negative (-) output, which is also referred to as Ground (GND). This type of component is known as “Polar” (think One-Way Street).
 
 All common 2 lead diodes are the same in this respect. Diodes work only if the voltage of its positive electrode is higher than its negative electrode and there is a narrow range of operating voltage for most all common diodes of 1.9 and 3.4V. If you use much more than 3.3V the LED will be damaged and burnt out.
@@ -173,13 +180,17 @@ All common 2 lead diodes are the same in this respect. Diodes work only if the v
 
 Resistor
 ----------------------------------------------------------------
+
 Resistors use Ohms (Ω) as the unit of measurement of their resistance (R). 1MΩ=1000kΩ, 1kΩ=1000Ω.
+
 A resistor is a passive electrical component that limits or regulates the flow of current in an electronic circuit.
+
 On the left, we see a physical representation of a resistor, and the right is the symbol used to represent the presence of a resistor in a circuit diagram or schematic.
 
 .. image:: ../_static/imgs/res-describe.png
 
 The bands of color on a resistor is a shorthand code used to identify its resistance value. For more details of resistor color codes, please refer to the card in the kit package.
+
 With a fixed voltage, there will be less current output with greater resistance added to the circuit. The relationship between Current, Voltage and Resistance can be expressed by this formula: I=V/R known as Ohm’s Law where I = Current, V = Voltage and R = Resistance. Knowing the values of any two of these allows you to solve the value of the third.
 
 In the following diagram, the current through R1 is: 
@@ -196,6 +207,7 @@ In the following diagram, the current through R1 is:
 
 Resistor
 ----------------------------------------------------------------
+
 Here we have a small breadboard as an example of how the rows of holes (sockets) are electrically attached. The left picture shows the ways the pins have shared electrical connection and the right picture shows the actual internal metal, which connect these rows electrically.
 
 .. image:: ../_static/imgs/breadborad-top-wire.png
@@ -206,6 +218,7 @@ Here we have a small breadboard as an example of how the rows of holes (sockets)
 
 GPIO Extension Board
 ----------------------------------------------------------------
+
 GPIO board is a convenient way to connect the RPi I/O ports to the breadboard directly. The GPIO pin sequence on Extension Board is identical to the GPIO pin sequence of RPi. 
 
 .. image:: ../_static/imgs/raspberrypi-extension-describe.png
@@ -214,10 +227,12 @@ GPIO board is a convenient way to connect the RPi I/O ports to the breadboard di
     
 Code
 ================================================================
+
 According to the circuit, when the GPIO17 of RPi output level is high, the LED turns ON. Conversely, when the GPIO17 RPi output level is low, the LED turns OFF. Therefore, we can let GPIO17 cycle output high and output low level to make the LED blink. We will use Python code to achieve the target.
 
 Python Code 1.1.1 Blink
 ----------------------------------------------------------------
+
 Now, we will use Python language to make a LED blink.
 
 First, observe the project result, and then learn about the code in detail. 
@@ -538,9 +553,6 @@ In gpiozero, at the end of your script, cleanup is run automatically, restoring 
 This means that you can reuse the pin for another device, and that despite turning the LED on (and hence, the pin high), after calling close() it is restored to its previous state (LED off, pin low).
 In this tutorial, most projects have added an active run cleanup program to restore the GPIO pin to the found default state.
 
-
-
-
 Freenove Car, Robot and other products for Raspberry Pi
 ================================================================
 
@@ -576,7 +588,6 @@ We also have car and robot kits for Raspberry Pi. You can visit our website for 
 .. raw:: html
 
    <iframe height="500" width="690" src="https://www.youtube.com/embed/LvghnJ2DNZ0" frameborder="0" allowfullscreen></iframe>Freenove Car, Robot and other products for Raspberry Pi
-================================================================
 
 We also have car and robot kits for Raspberry Pi. You can visit our website for details.
 

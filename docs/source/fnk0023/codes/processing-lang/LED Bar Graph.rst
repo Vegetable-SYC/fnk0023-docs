@@ -12,24 +12,23 @@ In this project, we will use the mouse to control the LED Bar Graph
 Component List
 ================================================================
 
-1. Raspberry Pi (with 40 GPIO) x1
-GPIO Extension Board & Ribbon Cable x1
-Breadboard x1
++--------------------------------------------------+---------------------------------------------------+
+|1. Raspberry Pi (with 40 GPIO) x1                 |                                                   |
+|                                                  | Jumper Wires x6                                   |
+|2. GPIO Extension Board & Ribbon Cable x1         |                                                   |
+|                                                  |  |jumper-wire|                                    |
+|3. Breadboard x1                                  |                                                   |
++--------------------------------------------------+---------------------------------------------------+
+|  Bar Graph LED x1                                | Resistor 220Ω x10                                 |
+|                                                  |                                                   |
+|   |LED-BAR|                                      |  |res-220R-hori|                                  |
++--------------------------------------------------+---------------------------------------------------+
 
-2. Jumper Wire
-
-.. image:: ../_static/imgs/jumper-wire.png
-        :width: 25%
-
-3. Bar Graph LED x1
-
-.. image:: ../_static/imgs/LED-BAR.png
-        :width: 25%
-
-4. Resistor 220Ω x10
-
-.. image:: ../_static/imgs/res-220R-hori.png
-        :width: 25%
+.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
+.. |LED-BAR| image:: ../_static/imgs/LED-BAR.png
+    :width: 60%
+.. |res-220R-hori| image:: ../_static/imgs/res-220R-hori.png
+    :width: 60%
 
 Component knowledge
 ================================================================

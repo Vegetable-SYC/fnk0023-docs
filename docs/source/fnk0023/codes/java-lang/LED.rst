@@ -69,6 +69,7 @@ Each pin’s functional assignment is defined in the image below:
 
 PHYSICAL Numbering
 ---------------------------------------------------------------
+
 Another way to refer to the pins is by simply counting across and down from pin 1 at the top left (nearest to the SD card). This is 'Physical Numbering', as shown below:
 
 .. image:: ../_static/imgs/PHYSICAL-Numbering.png
@@ -76,6 +77,7 @@ Another way to refer to the pins is by simply counting across and down from pin 
 
 WiringPi GPIO Numbering
 ---------------------------------------------------------------
+
 Different from the previous two types of GPIO serial numbers, RPi GPIO serial number of the WiringPi are numbered according to the BCM chip use in RPi.
 
 .. image:: ../_static/imgs/WiringPi-GPIO-Numbering.png
@@ -95,6 +97,7 @@ You can also use the following command to view their correlation.
 
 Circuit
 ================================================================
+
 First, disconnect your RPi from the GPIO Extension Shield. Then build the circuit according to the circuit and hardware diagrams. After the circuit is built and verified correct, connect the RPi to GPIO Extension Shield. 
 
 .. caution:: 
@@ -129,6 +132,7 @@ The connection of Raspberry Pi T extension board is as below. **Don't reverse th
     If you have a fan, you can connect it to 5V GND of breadboard via jumper wires.
 
 **How to distinguish resistors?**
+
 There are only three kind of resistors in this kit.
 
 1. The one with *1 red ring* is 10KΩ \
@@ -167,12 +171,15 @@ All common 2 lead diodes are the same in this respect. Diodes work only if the v
 Resistor
 ----------------------------------------------------------------
 Resistors use Ohms (Ω) as the unit of measurement of their resistance (R). 1MΩ=1000kΩ, 1kΩ=1000Ω.
+
 A resistor is a passive electrical component that limits or regulates the flow of current in an electronic circuit.
+
 On the left, we see a physical representation of a resistor, and the right is the symbol used to represent the presence of a resistor in a circuit diagram or schematic.
 
 .. image:: ../_static/imgs/res-describe.png
 
 The bands of color on a resistor is a shorthand code used to identify its resistance value. For more details of resistor color codes, please refer to the card in the kit package.
+
 With a fixed voltage, there will be less current output with greater resistance added to the circuit. The relationship between Current, Voltage and Resistance can be expressed by this formula: I=V/R known as Ohm’s Law where I = Current, V = Voltage and R = Resistance. Knowing the values of any two of these allows you to solve the value of the third.
 
 In the following diagram, the current through R1 is: 
@@ -189,6 +196,7 @@ In the following diagram, the current through R1 is:
 
 Resistor
 ----------------------------------------------------------------
+
 Here we have a small breadboard as an example of how the rows of holes (sockets) are electrically attached. The left picture shows the ways the pins have shared electrical connection and the right picture shows the actual internal metal, which connect these rows electrically.
 
 .. image:: ../_static/imgs/breadborad-top-wire.png
@@ -199,6 +207,7 @@ Here we have a small breadboard as an example of how the rows of holes (sockets)
 
 GPIO Extension Board
 ----------------------------------------------------------------
+
 GPIO board is a convenient way to connect the RPi I/O ports to the breadboard directly. The GPIO pin sequence on Extension Board is identical to the GPIO pin sequence of RPi. 
 
 .. image:: ../_static/imgs/raspberrypi-extension-describe.png
@@ -312,9 +321,6 @@ Make the LED turn on and off once every 1 second, repeat this process, and print
     :language: java
     :lines: 21-28
 
-
-
-
 Freenove Car, Robot and other products for Raspberry Pi
 ================================================================
 
@@ -350,7 +356,6 @@ We also have car and robot kits for Raspberry Pi. You can visit our website for 
 .. raw:: html
 
    <iframe height="500" width="690" src="https://www.youtube.com/embed/LvghnJ2DNZ0" frameborder="0" allowfullscreen></iframe>Freenove Car, Robot and other products for Raspberry Pi
-================================================================
 
 We also have car and robot kits for Raspberry Pi. You can visit our website for details.
 

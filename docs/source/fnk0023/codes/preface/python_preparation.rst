@@ -83,7 +83,9 @@ WiringPi is a GPIO access library written in C language for the used in the Rasp
 WiringPi Installation Steps
 ================================================================
 To install the WiringPi library, please open the Terminal and then follow the steps and commands below.  
+
 Note: For a command containing many lines, execute them one line at a time.
+
 Enter the following commands **one by one** in the **terminal** to install WiringPi:
 
 .. code-block:: console
@@ -114,9 +116,11 @@ Obtain the Project Code
 
 After the above installation is completed, you can visit our official website (http://www.freenove.com) or 
 our GitHub resources at (https://github.com/freenove) to download the latest available project code. 
+
 We provide both C language and Python language code for each project to allow ease of use for those who are skilled in either language. 
 
 This is the method for obtaining the code:
+
 In the pi directory of the RPi terminal, enter the following command.
 
 .. code-block:: console
@@ -131,6 +135,7 @@ In the pi directory of the RPi terminal, enter the following command.
 .. image:: ../_static/p00-imgs/chapter00-12.png
 
 After the download is completed, a new folder "Freenove_Complete_Starter_Kit_for_Raspberry_Pi" is generated, which contains all of the tutorials and required code.
+
 This folder name seems a little too long. We can simply rename it by using the following command. 
 
 .. code-block:: console

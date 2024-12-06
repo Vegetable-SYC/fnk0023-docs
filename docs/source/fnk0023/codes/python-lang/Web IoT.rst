@@ -28,9 +28,9 @@ Component List
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
 .. |res-220R| image:: ../_static/imgs/res-220R.png
-    :width: 20%
+    :width: 10%
 .. |red-led| image:: ../_static/imgs/red-led.png
-    :width: 30%
+    :width: 15%
 
 Circuit
 ================================================================

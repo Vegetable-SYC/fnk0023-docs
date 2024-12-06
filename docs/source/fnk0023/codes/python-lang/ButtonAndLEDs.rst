@@ -18,46 +18,48 @@ In the project, we will control the LED state through a Push Button Switch. When
 Component List
 ================================================================
 
-1.  | Raspberry Pi 
-    | (Recommended: Raspberry Pi 5 / 4B / 3B+ / 3B)
-    | (Compatible: 3A+ / 2B / 1B+ / 1A+ / Zero W / Zero) 
++-----------------------------------------------------------+
+|    Raspberry Pi                                           |     
+|                                                           |       
+|    (Recommended: Raspberry Pi 5 / 4B / 3B+ / 3B)          |       
+|                                                           |                                                            
+|    (Compatible: 3A+ / 2B / 1B+ / 1A+ / Zero W / Zero)     |                                                                 
+|                                                           | 
+|     |raspberrypi5|                                        | 
++---------------------------+-------------------------------+
+| LED x1                    | Breadboard x1                 |
+|                           |                               |
+|  |red-led|                |  |breadborad-830|             |                         
++---------------------------+----------+--------------------+
+|  GPIO Extension Board & Ribbon Cable | Resistor 220Ω x1   |
+|                                      |                    | 
+|   |extension-board|                  |  |res-220R|        |
++---------------------------+----------+--------------------+
+| Push Button Switch x1     | Resistor 10KΩ x2              |
+|                           |                               |
+|  |button-small|           |  |res-10k|                    |                         
++---------------------------+-------------------------------+
+| Jumper (some)                                             |
+|                                                           |
+|  |jumper-wire|                                            |
++-----------------------------------------------------------+
 
-2.  GPIO Extension Board & Ribbon Cable
-
-3.  Breadboard x1
-
-    .. image:: ../_static/imgs/raspberrypi5.png
-        :width: 25%
-
-    .. image:: ../_static/imgs/raspberrypi-extension-board.jpg
-        :width: 25%
-
-    .. image:: ../_static/imgs/breadborad-830.jpg
-        :width: 48%
-
-#.  LED x1
-
-    .. image:: ../_static/imgs/red-led.png
-        :height: 100
-
-#.  Resistor 220Ω x1
-
-    .. image:: ../_static/imgs/res-220R-hori.png
-        :height: 20
-
-#.  Resistor 10KΩ x2
-
-    .. image:: ../_static/imgs/res-10K-hori.png
-        :height: 20
-
-#.  Jumper (some)
-
-    .. image:: ../_static/imgs/jumper-wire.png
-        :height: 20
-
-#.  Push Button Switch x1
-
-    .. image:: ../_static/imgs/button-small.jpg
+.. |raspberrypi5| image:: ../_static/imgs/raspberrypi5.png
+    :width: 60%
+.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
+    :width: 60%
+.. |extension-board| image:: ../_static/imgs/raspberrypi-extension-board.jpg
+    :width: 70%
+.. |breadborad-830| image:: ../_static/imgs/breadborad-830.jpg
+    :width: 80%
+.. |red-led| image:: ../_static/imgs/red-led.png
+    :width: 15%
+.. |res-220R| image:: ../_static/imgs/res-220R.png
+    :width: 10%
+.. |res-10k| image:: ../_static/imgs/res-10K-hori.png
+    :width: 50%
+.. |button-small| image:: ../_static/imgs/button-small.jpg
+    :width: 30%
 
 .. note:: 
     Please Note: In the code “button” represents switch action.
@@ -238,5 +240,4 @@ To explicitly close a connection to a pin, you can manually call the close() met
     :language: python
     :lines: 25-34
 
-For more information about the methods used by the Button class in the GPIO Zero library,please refer to:
-https://gpiozero.readthedocs.io/en/stable/api_input.html#button
+For more information about the methods used by the Button class in the GPIO Zero library,please refer to: https://gpiozero.readthedocs.io/en/stable/api_input.html#button

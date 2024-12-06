@@ -55,8 +55,11 @@ Any analog value can be mapped to one digital value using the resolution of the 
         :align: center
 
 Subsection 1: the analog in range of 0V-3.3/256 V corresponds to digital 0;
+
 Subsection 2: the analog in range of 3.3 /256 V-2*3.3 /256V corresponds to digital 1;
+
 …
+
 The resultant analog signal will be divided accordingly.
 
 DAC
@@ -171,6 +174,7 @@ Enable I2C
 ----------------------------------------------------------------
 
 The I2C interface in Raspberry Pi is disabled by default. You will need to open it manually and enable the I2C interface as follows:
+
 Type command in the Terminal:
 
 .. code-block:: console
@@ -184,6 +188,7 @@ Then open the following dialog box:
         :align: center
 
 Choose “3 Interfacing Options” then “I4 I2C” then “Yes” and then “Finish” in this order and restart your RPi. The I2C module will then be started.
+
 Type a command to check whether the I2C module is started:
 
 .. code-block:: console
@@ -504,7 +509,7 @@ Circuit
 |                                                                                                |
 |   |ADS7830-fritizing-3|                                                                        |
 |                                                                                                |
-|   **If circuit above doesn't work, please try following wiring.**                                                                                            |
+|   **If circuit above doesn't work, please try following wiring.**                              |
 |                                                                                                |
 |   |ADS7830-fritizing-4|                                                                        |
 +------------------------------------------------------------------------------------------------+

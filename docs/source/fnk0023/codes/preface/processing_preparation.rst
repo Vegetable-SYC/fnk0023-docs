@@ -52,6 +52,7 @@ Click“Download”. Choose to download the software installation package corres
 :orange:`It is recommended to use the first method to download the software package.`
 
 Find the directory where the installation package is located and extract it to the current directory.
+
 The default directory of the installation package using the first method is: /home/pi, and with the the second method, it is: /home/pi/Downloads
 
 .. image:: ../_static/imgs/processing_download.png
@@ -135,12 +136,14 @@ If you've typed everything correctly, you'll see a circle on your screen.
     :align: center
 
 Click on "Stop" (the rectangle button in the Toolbar) or "Close" on Display Window to stop running the program.
+
 If you didn't type it correctly, the Message Area will turn red and report an error. If this happens, make sure that you've copied the example code exactly: the numbers should be contained within parentheses and have commas between each of them, and each line should end with a semicolon.
 
 .. image:: ../_static/imgs/processing_error.png
     :align: center
 
 You can export this sketch to an application to run it directly without opening the Processing.
+
 To export the sketch to the application, you must first save it.
 
 .. image:: ../_static/imgs/processing_preferences.png

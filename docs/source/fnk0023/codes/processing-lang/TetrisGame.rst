@@ -53,6 +53,7 @@ Sketch
 Sketch 5.1.1 TetrisGame
 
 Sketch 5.1.1 TetrisGame
+
 1.	Use Processing to open the file Sketch_05_1_1_TetrisGame.
 
 .. code-block:: console    

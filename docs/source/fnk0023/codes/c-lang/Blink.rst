@@ -12,33 +12,6 @@ In this project, we will use RPi to control blinking a common LED.
 Component List
 ================================================================
 
-1.  | Raspberry Pi 
-    | (Recommended: Raspberry Pi 5 / 4B / 3B+ / 3B) 
-    | (Compatible: 3A+ / 2B / 1B+ / 1A+ / Zero W / Zero) 
-
-    .. image:: ../_static/imgs/raspberrypi5.png
-        :height: 100
-
-2.  GPIO Extension Board & Ribbon Cable
-
-    .. image:: ../_static/imgs/raspberrypi-extension-board.jpg
-        :height: 100
-
-3.  Breadboard x1
-
-    .. image:: ../_static/imgs/breadborad-830.jpg
-        :height: 100
-
-4.  LED x1
-
-    .. image:: ../_static/imgs/red-led.png
-        :height: 100
-
-5.  Resistor 220Ω x1
-
-    .. image:: ../_static/imgs/res-220R.png
-        :height: 100
-
 +-----------------------------------------------------------+
 |    Raspberry Pi                                           |     
 |                                                           |       
@@ -62,15 +35,13 @@ Component List
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
     :width: 60%
 .. |extension-board| image:: ../_static/imgs/raspberrypi-extension-board.jpg
-    :width: 18%
+    :width: 70%
 .. |breadborad-830| image:: ../_static/imgs/breadborad-830.jpg
-    :width: 10%
+    :width: 80%
 .. |red-led| image:: ../_static/imgs/red-led.png
-    :width: 30%
+    :width: 15%
 .. |res-220R| image:: ../_static/imgs/res-220R.png
-    :width: 30%
-.. |NPN-transistor| image:: ../_static/imgs/NPN-transistor.png
-    :width: 25%
+    :width: 10%
 
 In the components list, 3B GPIO, Extension Shield Raspberry and Breadboard are necessary for each project. Later, they will be reference by text only (no images as in above).
 
@@ -84,7 +55,8 @@ BCM GPIO Numbering
 ---------------------------------------------------------------
 The Raspberry Pi CPU uses Broadcom (BCM) processing chips BCM2835, BCM2836 or BCM2837. GPIO pin numbers are assigned by the processing chip manufacturer and are how the computer recognizes each pin. The pin numbers themselves do not make sense or have meaning as they are only a form of identification. Since their numeric values and physical locations have no specific order, there is no way to remember them so you will need to have a printed reference or a reference board that fits over the pins.
 
-Each pin’s functional assignment is defined in the image below:
+Each pin's functional assignment is defined in the image below:
+
     .. image:: ../_static/imgs/raspberrypi5-cc90.png
         :height: 500
 
@@ -194,6 +166,7 @@ All common 2 lead diodes are the same in this respect. Diodes work only if the v
 
 .. image:: ../_static/imgs/led-describe.png
     :width: 100%
+    :align: center
 
 .. note:: 
     Note: LEDs cannot be directly connected to a power supply, which usually ends in a damaged component. A resistor with a specified resistance value must be connected in series to the LED you plan to use.
@@ -205,6 +178,7 @@ A resistor is a passive electrical component that limits or regulates the flow o
 On the left, we see a physical representation of a resistor, and the right is the symbol used to represent the presence of a resistor in a circuit diagram or schematic.
 
 .. image:: ../_static/imgs/res-describe.png
+    :align: center
 
 The bands of color on a resistor is a shorthand code used to identify its resistance value. For more details of resistor color codes, please refer to the card in the kit package.
 With a fixed voltage, there will be less current output with greater resistance added to the circuit. The relationship between Current, Voltage and Resistance can be expressed by this formula: I=V/R known as Ohm’s Law where I = Current, V = Voltage and R = Resistance. Knowing the values of any two of these allows you to solve the value of the third.
@@ -214,6 +188,7 @@ In the following diagram, the current through R1 is:
 .. math:: I=U/R=5V/10kΩ=0.0005A=0.5mA.
 
 .. image:: ../_static/imgs/res-current.png
+    :align: center
 
 .. warning:: 
     WARNING: Never connect the two poles of a power supply with anything of low resistance value (i.e. a metal object or bare wire) this is a Short and results in high current that may damage the power supply and electronic components.
@@ -227,6 +202,7 @@ Here we have a small breadboard as an example of how the rows of holes (sockets)
 
 .. image:: ../_static/imgs/breadborad-top-wire.png
     :width: 48%
+    
 
 .. image:: ../_static/imgs/breadborad-bottom-wire.png
     :width: 48%
@@ -237,6 +213,7 @@ GPIO board is a convenient way to connect the RPi I/O ports to the breadboard di
 
 .. image:: ../_static/imgs/raspberrypi-extension-describe.png
     :width: 90%
+    :align: center
 
     
 Code
@@ -316,6 +293,7 @@ GPIO Numbering Relationship
 
 .. image:: ../_static/imgs/raspberrypi-gpio-sheet.png
     :width: 90%
+    :align: center
 
 In the main function ``main()``, initialize ``wiringPi`` first.
 
@@ -371,7 +349,6 @@ We also have car and robot kits for Raspberry Pi. You can visit our website for 
 .. raw:: html
 
    <iframe height="500" width="690" src="https://www.youtube.com/embed/LvghnJ2DNZ0" frameborder="0" allowfullscreen></iframe>Freenove Car, Robot and other products for Raspberry Pi
-================================================================
 
 We also have car and robot kits for Raspberry Pi. You can visit our website for details.
 
@@ -399,6 +376,7 @@ We also have car and robot kits for Raspberry Pi. You can visit our website for 
 
 .. image:: ../_static/imgs/52_1.png
     :width: 50%
+    
 .. image:: ../_static/imgs/52_2.png
     :width: 40%
 

@@ -14,11 +14,6 @@ A Photoresistor is very sensitive to the amount of light present. We can take ad
 Component List
 ================================================================
 
-.. table:: 
-    :width: 30%
-    :widths: 20 20
-    :align: center
-
 +-------------------------------------------------+-------------------------------+
 |1. Raspberry Pi (with 40 GPIO) x1                |   Resistor 220Ω x1            |     
 |                                                 |                               |       
@@ -41,17 +36,17 @@ Component List
 +---------------------------------------------------------------------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
-        :width: 40%
+        :width: 80%
 .. |Resistor-10kΩ| image:: ../_static/imgs/Resistor-10kΩ.png
-        :width: 25%
+        :width: 15%
 .. |res-220R| image:: ../_static/imgs/res-220R.png
-        :width: 25%
+        :width: 15%
 .. |Phtotresistor| image:: ../_static/imgs/Phtotresistor.png
-        :width: 25%
+        :width: 15%
 .. |ADC-module-1| image:: ../_static/imgs/ADC-module-1.png
 .. |ADC-module-2| image:: ../_static/imgs/ADC-module-2.png
 .. |red-led| image:: ../_static/imgs/red-led.png
-        :width: 25%
+        :width: 40%
 
 Component knowledge
 ================================================================

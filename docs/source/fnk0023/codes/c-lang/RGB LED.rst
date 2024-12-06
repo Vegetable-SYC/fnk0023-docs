@@ -27,7 +27,7 @@ Red, Green, and Blue light are called 3 Primary Colors when discussing light (No
 
 .. container:: centered
     
-    RGB
+    :x-large:`RGB`
 
 If we use a three 8 bit PWM to control the RGB LED, in theory, we can create 28*28*28=16777216 (16 million) colors through different combinations of RGB light brightness.
 
