@@ -357,6 +357,3 @@ We also have car and robot kits for Raspberry Pi. You can visit our website for 
 .. raw:: html
 
    <iframe height="500" width="690" src="https://www.youtube.com/embed/LvghnJ2DNZ0" frameborder="0" allowfullscreen></iframe>
-
-.. toctree:: 
-    :includehidden:
